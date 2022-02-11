@@ -1,11 +1,16 @@
+.badge-holder{
+    position: relative;
+}
 .badge{
-    right: -15%;
-    top:-15%;
+    right: -5%;
+    top:-5%;
 position: absolute;
+display:grid;
+place-content: center;
 border-radius: 50%;
-min-width:1.5rem; 
+width:1.5rem; 
 padding:0.25rem;
- min-height:1.5rem;
+ height:1.5rem;
  font-size:small;
  background-color: var(--primary-color);
  color: var(--light-color);
