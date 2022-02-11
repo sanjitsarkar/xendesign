@@ -47,3 +47,22 @@ window.onclick = function(event) {
 
   }
 }
+
+
+
+//Toast
+
+const showToast = (container,duration=1000) => {
+    const toast = document.querySelector(`#${container}`);
+    toast.classList.add('toast-open');
+    setTimeout(()=>{ 
+        
+        toast.classList.remove('toast-open');
+        // toast.classList.add('toast-hide');
+    
+    },
+    duration
+    )
+    
+    
+    }
