@@ -8,3 +8,11 @@ function closeAlert(elem){
     
     },300)
     }
+//Slider
+const slider = document.querySelector("#slider");
+const output = document.querySelector("#slider-value");
+output.textContent = slider.value; 
+
+slider.oninput = function() {
+  output.textContent = this.value;
+}
