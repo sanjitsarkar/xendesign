@@ -4,7 +4,5 @@ function closeAlert(elem){
     setTimeout(()=>{
         elem.parentNode.style.display = 'none';
     elem.parentNode.classList.remove('alert-hide');
-    
-    
     },300)
     }
