@@ -1,0 +1,145 @@
+button, input[type=submit] {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.3rem;
+    background-color: #119195;
+    color: rgb(255, 255, 255);
+  }
+
+.btn {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+
+    background-color: transparent;
+box-shadow: var(--bx-sh-1);
+transform: scale(1);
+font-size: .9rem;
+transition: all 0.1s ease-in-out;
+  }
+.btn:hover{
+    box-shadow: var(--bx-sh-2);
+    transform: scale(1.05);
+    opacity:.9;
+}
+.btn:active{
+    box-shadow: var(--bx-sh-1);
+    opacity:.7;
+
+    transform: scale(.95);
+}
+  .btn-disabled {
+    background-color: #dddbdb;
+
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+.btn-tertiary {
+    background-color: var(--tertiary-color);
+    color: var(--light-color);
+}
+.btn-error {
+    background-color: var(--error-color);
+    color: var(--light-color);
+}
+.btn-warning {
+
+    background-color: var(--warning-color);
+    color: var(--dark-color);
+}
+.btn-info {
+    background-color: var(--info-color);
+    color: var(--light-color);
+}
+.btn-success {
+    background-color: var(--success-color);
+    color: var(--light-color);
+}
+.btn-light {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+.btn-dark {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+.btn-grey {
+    background-color: var(--grey-color);
+    color: var(--light-color);
+}
+.btn-outline-primary,.btn-outline-dark,.btn-outline-error,.btn-outline-info,.btn-outline-success,.btn-outline-warning,.btn-outline-secondary,.btn-outline-tertiary,.btn-outline-primary {
+    border: .5px solid;
+  
+}
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+.btn-outline-secondary {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+.btn-outline-tertiary {
+    border-color: var(--tertiary-color);
+    color: var(--tertiary-color);
+}
+.btn-outline-error {
+    border-color: var(--error-color);
+    color: var(--error-color);
+}
+.btn-outline-warning {
+    background: var(--dark-color);
+    border-color: var(--warning-color);
+    color: var(--warning-color);
+}
+.btn-outline-info {
+    border-color: var(--info-color);
+    color: var(--info-color);
+}
+.btn-outline-success {
+    border-color: var(--success-color);
+    color: var(--success-color);
+}
+
+.btn-outline-dark {
+    border-color: var(--dark-color);
+    color: var(--dark-color);
+}
+.btn-outline-grey {
+    border-color: var(--grey-color);
+    color: var(--grey-color);
+}
+.btn-round,.btn-round-lg,.btn-round-sm,.btn-round-md {
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+   
+}
+.btn-round{
+   
+    width:3rem;
+    height:3rem;
+}
+.btn-round-lg{
+    width:4rem;
+    height:4rem;
+}
+.btn-round-sm{
+    font-size: smaller;
+    width:2rem;
+    height:2rem;
+}
+.btn-round-md{
+    width:2.5rem;
+    height:2.5rem;
+}
