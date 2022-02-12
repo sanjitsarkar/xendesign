@@ -11,7 +11,7 @@ img,
 
 .img-responsive {
 }
-.img:hover {
+.img-hover:hover {
   box-shadow: var(--bx-sh-3);
 }
 
