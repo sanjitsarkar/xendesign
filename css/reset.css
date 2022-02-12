@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-*, *::after, *::before {
-=======
 *,
 *::after,
 *::before {
->>>>>>> feature/utils
   padding: 0;
   margin: 0;
   color: inherit;
