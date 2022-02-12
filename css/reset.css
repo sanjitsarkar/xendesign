@@ -12,7 +12,7 @@ body {
 
 hr {
   border: 0;
-  border-top: 1px dotted var(--light-color);
+  border-top: 1px solid var(--grey-color-8);
 }
 
 img {
