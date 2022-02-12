@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   color: inherit;
@@ -10,11 +12,7 @@ body {
 
 hr {
   border: 0;
-<<<<<<< HEAD
-  border-top: 1px dotted #efefef;
-=======
   border-top: 1px solid var(--grey-color-8);
->>>>>>> feature/utils
 }
 
 img {
