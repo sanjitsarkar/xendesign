@@ -647,3 +647,21 @@
 .list-decimal {
   list-style-type: decimal;
 }
+.bx-sh-1 {
+  box-shadow: var(--bx-sh-1);
+}
+.bx-sh-2 {
+  box-shadow: var(--bx-sh-2);
+}
+.bx-sh-3 {
+  box-shadow: var(--bx-sh-3);
+}
+.bx-sh-dark-1 {
+  box-shadow: var(--bx-sh-dark-1);
+}
+.bx-sh-dark-2 {
+  box-shadow: var(--bx-sh-dark-2);
+}
+.bx-sh-dark-3 {
+  box-shadow: var(--bx-sh-dark-3);
+}
