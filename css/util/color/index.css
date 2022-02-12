@@ -16,6 +16,9 @@
 .bg-dark {
   background-color: var(--dark-color);
 }
+.bg-black {
+  background-color: var(--black-color);
+}
 .bg-grey {
   background-color: var(--grey-color);
 }
