@@ -1,4 +1,5 @@
 :root {
+<<<<<<< HEAD
   --primary-color: hsl(189, 96%, 37%);
   --secondary-color: hsl(152, 93%, 40%);
   --tertiary-color: hsl(273, 100%, 50%);
@@ -42,6 +43,153 @@
   --bx-sh-grey-1: 0px 0px 0.5rem hsl(297, 100%, 50%, 0.1); /* box-shadow */
   --bx-sh-grey-2: 0px 0px 0.7rem hsl(297, 100%, 50%, 0.2); /* box-shadow */
   --bx-sh-grey-3: 0px 0px 0.9rem hsl(297, 100%, 50%, 0.3); /* box-shadow */
+=======
+  --primary-color-9: hsla(189, 96%, 37%, 0.1);
+  --primary-color-8: hsla(189, 96%, 37%, 0.2);
+  --primary-color-7: hsla(189, 96%, 37%, 0.3);
+  --primary-color-6: hsla(189, 96%, 37%, 0.4);
+  --primary-color-5: hsla(189, 96%, 37%, 0.5);
+  --primary-color-4: hsla(189, 96%, 37%, 0.6);
+  --primary-color-3: hsla(189, 96%, 37%, 0.7);
+  --primary-color-2: hsla(189, 96%, 37%, 0.8);
+  --primary-color-1: hsla(189, 96%, 37%, 0.9);
+  --primary-color: hsl(189, 96%, 37%);
+  --secondary-color-9: hsla(152, 93%, 40%, 0.1);
+  --secondary-color-8: hsla(152, 93%, 40%, 0.2);
+  --secondary-color-7: hsla(152, 93%, 40%, 0.3);
+  --secondary-color-6: hsla(152, 93%, 40%, 0.4);
+  --secondary-color-5: hsla(152, 93%, 40%, 0.5);
+  --secondary-color-4: hsla(152, 93%, 40%, 0.6);
+  --secondary-color-3: hsla(152, 93%, 40%, 0.7);
+  --secondary-color-2: hsla(152, 93%, 40%, 0.8);
+  --secondary-color-1: hsla(152, 93%, 40%, 0.9);
+  --secondary-color: hsl(152, 93%, 40%);
+  --tertiary-color-9: hsla(330, 100%, 50%, 0.1);
+  --tertiary-color-8: hsla(330, 100%, 50%, 0.2);
+  --tertiary-color-7: hsla(330, 100%, 50%, 0.3);
+  --tertiary-color-6: hsla(330, 100%, 50%, 0.4);
+  --tertiary-color-5: hsla(330, 100%, 50%, 0.5);
+  --tertiary-color-4: hsla(330, 100%, 50%, 0.6);
+  --tertiary-color-3: hsla(330, 100%, 50%, 0.7);
+  --tertiary-color-2: hsla(330, 100%, 50%, 0.8);
+  --tertiary-color-1: hsla(330, 100%, 50%, 0.9);
+  --tertiary-color: hsl(330, 100%, 50%);
+  --error-color-1: hsla(5, 100%, 50%, 0.1);
+  --error-color-2: hsla(5, 100%, 50%, 0.2);
+  --error-color-3: hsla(5, 100%, 50%, 0.3);
+  --error-color-4: hsla(5, 100%, 50%, 0.4);
+  --error-color-5: hsla(5, 100%, 50%, 0.5);
+  --error-color-6: hsla(5, 100%, 50%, 0.6);
+  --error-color-7: hsla(5, 100%, 50%, 0.7);
+  --error-color-8: hsla(5, 100%, 50%, 0.8);
+  --error-color-9: hsla(5, 100%, 50%, 0.9);
+  --error-color: hsl(5, 100%, 50%);
+  --warning-color-9: hsla(46, 100%, 50%, 0.1);
+  --warning-color-8: hsla(46, 100%, 50%, 0.2);
+  --warning-color-7: hsla(46, 100%, 50%, 0.3);
+  --warning-color-6: hsla(46, 100%, 50%, 0.4);
+  --warning-color-5: hsla(46, 100%, 50%, 0.5);
+  --warning-color-4: hsla(46, 100%, 50%, 0.6);
+  --warning-color-3: hsla(46, 100%, 50%, 0.7);
+  --warning-color-2: hsla(46, 100%, 50%, 0.8);
+  --warning-color-1: hsla(46, 100%, 50%, 0.9);
+  --warning-color: hsl(46, 100%, 50%);
+  --info-color-9: hsla(175, 96%, 30%, 0.1);
+  --info-color-8: hsla(175, 96%, 30%, 0.2);
+  --info-color-7: hsla(175, 96%, 30%, 0.3);
+  --info-color-6: hsla(175, 96%, 30%, 0.4);
+  --info-color-5: hsla(175, 96%, 30%, 0.5);
+  --info-color-4: hsla(175, 96%, 30%, 0.6);
+  --info-color-3: hsla(175, 96%, 30%, 0.7);
+  --info-color-2: hsla(175, 96%, 30%, 0.8);
+  --info-color-1: hsla(175, 96%, 30%, 0.9);
+  --info-color: hsl(175, 96%, 30%);
+
+  --success-color-9: hsla(165, 97%, 25%, 0.1);
+  --success-color-8: hsla(165, 97%, 25%, 0.2);
+  --success-color-7: hsla(165, 97%, 25%, 0.3);
+  --success-color-6: hsla(165, 97%, 25%, 0.4);
+  --success-color-5: hsla(165, 97%, 25%, 0.5);
+  --success-color-4: hsla(165, 97%, 25%, 0.6);
+  --success-color-3: hsla(165, 97%, 25%, 0.7);
+  --success-color-2: hsla(165, 97%, 25%, 0.8);
+  --success-color-1: hsla(165, 97%, 25%, 0.9);
+  --success-color: hsl(165, 97%, 25%);
+  --light-color-9: hsla(0, 0%, 98%, 0.1);
+  --light-color-8: hsla(0, 0%, 98%, 0.2);
+  --light-color-7: hsla(0, 0%, 98%, 0.3);
+  --light-color-6: hsla(0, 0%, 98%, 0.4);
+  --light-color-5: hsla(0, 0%, 98%, 0.5);
+  --light-color-4: hsla(0, 0%, 98%, 0.6);
+  --light-color-3: hsla(0, 0%, 98%, 0.7);
+  --light-color-2: hsla(0, 0%, 98%, 0.8);
+  --light-color-1: hsla(0, 0%, 98%, 0.9);
+  --light-color: hsl(0, 0%, 98%);
+  --dark-color-9: hsla(180, 9%, 13%, 0.1);
+  --dark-color-8: hsla(180, 9%, 13%, 0.2);
+  --dark-color-7: hsla(180, 9%, 13%, 0.4);
+  --dark-color-6: hsla(180, 9%, 13%, 0.3);
+  --dark-color-5: hsla(180, 9%, 13%, 0.5);
+  --dark-color-4: hsla(180, 9%, 13%, 0.6);
+  --dark-color-3: hsla(180, 9%, 13%, 0.7);
+  --dark-color-2: hsla(180, 9%, 13%, 0.8);
+  --dark-color-1: hsla(180, 9%, 13%, 0.9);
+  --dark-color: hsl(180, 9%, 13%);
+  --grey-color-9: hsla(276, 3%, 32%, 0.1);
+  --grey-color-8: hsla(276, 3%, 32%, 0.2);
+  --grey-color-7: hsla(276, 3%, 32%, 0.3);
+  --grey-color-6: hsla(276, 3%, 32%, 0.4);
+  --grey-color-5: hsla(276, 3%, 32%, 0.5);
+  --grey-color-4: hsla(276, 3%, 32%, 0.6);
+  --grey-color-3: hsla(276, 3%, 32%, 0.7);
+  --grey-color-2: hsla(276, 3%, 32%, 0.8);
+  --grey-color-1: hsla(276, 3%, 32%, 0.9);
+  --grey-color: hsl(276, 3%, 32%);
+  --black-color-9: hsla(0, 0%, 0%, 0.1);
+  --black-color-8: hsla(0, 0%, 0%, 0.2);
+  --black-color-7: hsla(0, 0%, 0%, 0.3);
+  --black-color-6: hsla(0, 0%, 0%, 0.4);
+  --black-color-5: hsla(0, 0%, 0%, 0.5);
+  --black-color-4: hsla(0, 0%, 0%, 0.6);
+  --black-color-3: hsla(0, 0%, 0%, 0.7);
+  --black-color-2: hsla(0, 0%, 0%, 0.8);
+  --black-color-1: hsla(0, 0%, 0%, 0.9);
+  --black-color: hsl(0, 0%, 0%);
+  --bx-sh-1: 0px 0px 0.5rem var(--dark-color-9); /* box-shadow */
+  --bx-sh-2: 0px 0px 0.7rem var(--dark-color-8); /* box-shadow */
+  --bx-sh-3: 0px 0px 0.9rem var(--dark-color-7); /* box-shadow */
+  --bx-sh-dark-1: 0px 0px 0.5rem var(--dark-color-9); /* box-shadow */
+  --bx-sh-dark-2: 0px 0px 0.7rem var(--dark-color-8); /* box-shadow */
+  --bx-sh-dark-3: 0px 0px 0.9rem var(--dark-color-7); /* box-shadow */
+  --bx-sh-primary-1: 0px 0px 0.5rem var(--primary-color-9); /* box-shadow */
+  --bx-sh-primary-2: 0px 0px 0.7rem var(--primary-color-8); /* box-shadow */
+  --bx-sh-primary-3: 0px 0px 0.9rem var(--primary-color-7); /* box-shadow */
+  --bx-sh-secondary-1: 0px 0px 0.5rem var(--secondary-color-9); /* box-shadow */
+  --bx-sh-secondary-2: 0px 0px 0.7rem var(--secondary-color-8); /* box-shadow */
+  --bx-sh-secondary-3: 0px 0px 0.9rem var(--secondary-color-7); /* box-shadow */
+  --bx-sh-tertiary-1: 0px 0px 0.5rem var(--tertiary-color-9); /* box-shadow */
+  --bx-sh-tertiary-2: 0px 0px 0.7rem var(--tertiary-color-8); /* box-shadow */
+  --bx-sh-tertiary-3: 0px 0px 0.9rem var(--tertiary-color-7); /* box-shadow */
+  --bx-sh-error-1: 0px 0px 0.5rem var(--errro-color-9); /* box-shadow */
+  --bx-sh-error-2: 0px 0px 0.7rem var(--errro-color-8); /* box-shadow */
+  --bx-sh-error-3: 0px 0px 0.9rem var(--errro-color-7); /* box-shadow */
+  --bx-sh-warning-1: 0px 0px 0.5rem var(--warning-color-9); /* box-shadow */
+  --bx-sh-warning-2: 0px 0px 0.7rem var(--warning-color-8); /* box-shadow */
+  --bx-sh-warning-3: 0px 0px 0.9rem var(--warning-color-7); /* box-shadow */
+  --bx-sh-success-1: 0px 0px 0.5rem var(--success-color-9); /* box-shadow */
+  --bx-sh-success-2: 0px 0px 0.7rem var(--success-color-8); /* box-shadow */
+  --bx-sh-success-3: 0px 0px 0.9rem var(--success-color-7); /* box-shadow */
+  --bx-sh-info-1: 0px 0px 0.5rem var(--info-color-9); /* box-shadow */
+  --bx-sh-info-2: 0px 0px 0.7rem var(--info-color-8); /* box-shadow */
+  --bx-sh-info-3: 0px 0px 0.9rem var(--info-color-7); /* box-shadow */
+  --bx-sh-light-1: 0px 0px 0.5rem var(--light-color-9); /* box-shadow */
+  --bx-sh-light-2: 0px 0px 0.7rem var(--light-color-8); /* box-shadow */
+  --bx-sh-light-3: 0px 0px 0.9rem var(--light-color-7); /* box-shadow */
+  --bx-sh-grey-1: 0px 0px 0.5rem var(--grey-color-9); /* box-shadow */
+  --bx-sh-grey-2: 0px 0px 0.7rem var(--grey-color-8); /* box-shadow */
+  --bx-sh-grey-3: 0px 0px 0.9rem var(--grey-color-7); /* box-shadow */
+
+>>>>>>> feature/utils
   --font-size: 1rem;
   --pd: 0.5rem;
   --m: 0.5rem;
