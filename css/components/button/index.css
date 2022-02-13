@@ -5,8 +5,8 @@ input[type="submit"] {
   border: none;
   padding: 0.5rem 0.6rem;
   border-radius: 0.3rem;
-  background-color: #119195;
-  color: rgb(255, 255, 255);
+  background-color: var(--primary-color);
+  color: var(--light-color);
 }
 
 .btn {
@@ -33,7 +33,7 @@ input[type="submit"] {
   transform: scale(0.95);
 }
 .btn-disabled {
-  background-color: #dddbdb;
+  background-color: var(--grey-color-7);
 }
 
 .btn-primary {
