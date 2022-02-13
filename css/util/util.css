@@ -665,3 +665,47 @@
 .bx-sh-dark-3 {
   box-shadow: var(--bx-sh-dark-3);
 }
+.b {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--dark-color-3);
+}
+.b-solid {
+  border-style: solid;
+}
+.b-dotted {
+  border-style: dotted;
+}
+.b-dashed {
+  border-style: dashed;
+}
+.b-double {
+  border-style: double;
+}
+.b-inset {
+  border-style: inset;
+}
+.b-outset {
+  border-style: outset;
+}
+.b-ridge {
+  border-style: ridge;
+}
+.b-groove {
+  border-style: groove;
+}
+.b-1 {
+  border-width: 1px;
+}
+.b-2 {
+  border-width: 2px;
+}
+.b-3 {
+  border-width: 3px;
+}
+.b-4 {
+  border-width: 4px;
+}
+.b-5 {
+  border-width: 5px;
+}
