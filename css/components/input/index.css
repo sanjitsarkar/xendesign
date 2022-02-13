@@ -6,13 +6,20 @@ textarea {
   border: 0;
   padding: 0.6em 0.7em;
   border-radius: 0.2rem;
-  background-color: rgba(255, 255, 255, 0.034);
+  background-color: var(--dark-color-8);
 
   outline: none;
   color: var(--light-color);
-  border: 1px solid rgba(255, 255, 255, 0.205);
+  border: 1px solid var(--dark-color-8);
   font-size: var(--font-size);
   transition: all 0.3s ease-in-out;
+}
+.input-group{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  row-gap:.5rem;
+  column-gap:.5rem;
 }
 input:hover,
 textarea:hover {
@@ -22,16 +29,28 @@ input:focus,
 textarea:focus {
   border: 1px solid var(--secondary-color);
 }
+.input-primary-light {
+  background-color: var(--primary-color-8);
+  color: var(--dark-color);
+}
+.input-secondary-light {
+  background-color: var(--secondary-color-8);
+  color: var(--dark-color);
+}
+.input-tertiary-light {
+  background-color: var(--tertiary-color-8);
+  color: var(--dark-color);
+}
 .input-error::placeholder,
 .input-success::placeholder {
   color: var(--light-color-4);
 }
 .input-dark {
-  background-color: var(--dark-color-9);
+  background-color: var(--dark-color-8);
   color: var(--dark-color);
 }
 .input-light {
-  background-color: var(--light-color-9);
+  background-color: var(--light-color-8);
 
   color: var(--dark-color);
 }
