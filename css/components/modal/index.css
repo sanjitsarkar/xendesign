@@ -1,45 +1,38 @@
-
 .modal {
-    /* display: none;  */
-    transform: scale(0);
+  /* display: none;  */
+  transform: scale(0);
 
-    position: fixed; 
-    z-index: 999; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    transform: scale(0);
-    filter:blur(10px);
-    background-color: rgba(0, 0, 0, 0.774); 
-  }
-  
-  
-  .modal-content {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--light-color);
-    margin: 15% auto;
-    padding: 2rem;
-    box-shadow: var(--bx-sh-3);
-    width: 80%; 
-    position: relative;
-   
-
-  }
-
-  .modal-open{
-    filter:blur(0px);
-
-    transform: scale(1);
-    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
- 
-
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transform: scale(0);
+  backdrop-filter: var(--blur-5);
+  background-color: rgba(0, 0, 0, 0.774);
 }
 
-  /* .slide-down{
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-color);
+  margin: 15% auto;
+  padding: 2rem;
+  box-shadow: var(--bx-sh-3);
+  width: 80%;
+  position: relative;
+}
+
+.modal-open {
+  filter: blur(0px);
+
+  transform: scale(1);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* .slide-down{
     animation: slide-down linear .3s 1;
     animation-fill-mode: both;
   }
@@ -63,25 +56,25 @@
         top:10% auto;
     }
 } */
-  .close {
-      box-shadow: var(--bx-sh-3);
-      border-radius:50%;
-      background-color: white;
-      height:2rem;width:2rem;
-      display: grid;
-      place-content: center;
-      position:absolute;
-      right:-.3rem;
-      top:-.8rem;
-    color: var(--error-color);
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: var(--dark-color);
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
+.close {
+  box-shadow: var(--bx-sh-3);
+  border-radius: 50%;
+  background-color: white;
+  height: 2rem;
+  width: 2rem;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  right: -0.3rem;
+  top: -0.8rem;
+  color: var(--error-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--dark-color);
+  text-decoration: none;
+  cursor: pointer;
+}
