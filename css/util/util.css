@@ -665,6 +665,33 @@
 .bx-sh-dark-3 {
   box-shadow: var(--bx-sh-dark-3);
 }
+.bx-sh-primary-1 {
+  box-shadow: var(--bx-sh-primary-1);
+}
+.bx-sh-primary-2 {
+  box-shadow: var(--bx-sh-primary-2);
+}
+.bx-sh-primary-3 {
+  box-shadow: var(--bx-sh-primary-3);
+}
+.bx-sh-secondary-1 {
+  box-shadow: var(--bx-sh-secondary-1);
+}
+.bx-sh-secondary-2 {
+  box-shadow: var(--bx-sh-secondary-2);
+}
+.bx-sh-secondary-3 {
+  box-shadow: var(--bx-sh-secondary-3);
+}
+.bx-sh-tertiary-1 {
+  box-shadow: var(--bx-sh-tertiary-1);
+}
+.bx-sh-tertiary-2 {
+  box-shadow: var(--bx-sh-tertiary-2);
+}
+.bx-sh-tertiary-3 {
+  box-shadow: var(--bx-sh-tertiary-3);
+}
 .b {
   border-style: solid;
   border-width: 1px;
