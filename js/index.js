@@ -15,13 +15,9 @@ slider.oninput = function () {
     output.textContent = this.value;
 }
 
-
-
 //Modal
 const modal = document.querySelector("#modal");
-
 var openModal = document.querySelector("#open-modal");
-
 var close = document.querySelector("#close");
 
 openModal.onclick = function () {
@@ -37,67 +33,42 @@ window.onclick = function (event) {
     }
 }
 
-
-
 //Toast
-
-const showToast = (container,duration=1000) => {
+const showToast = (container, duration = 1000) => {
     const toast = document.querySelector(`#${container}`);
     toast.classList.add('toast-open');
-    setTimeout(()=>{ 
-        
+    setTimeout(() => {
         toast.classList.remove('toast-open');
-        // toast.classList.add('toast-hide');
-    
-    },
-    duration
-    )
-    
-    
-    }
+    },duration)
+}
 
-
-
-    //Rating
+//Rating
 const rating = document.querySelectorAll('.rating');
-console.log(rating);
-
-const clearRating = (n)=>{
-    for(var i=n+1;i<5;i++)
-    {
+const clearRating = (n) => {
+    for (var i = n + 1; i < 5; i++) {
         rating[i].classList.remove('rating-active');
-    
     }
 }
-const addRating = (n)=>{
+const addRating = (n) => {
     clearRating(n);
-for(var i=0;i<=n;i++)
-{
-    rating[i].classList.add('rating-active')
+    for (var i = 0; i <= n; i++) {
+        rating[i].classList.add('rating-active')
+    }
 
 }
 
-}
-
-
-
-    rating[0].addEventListener("click",()=>{
-        
-        addRating(0);
-    })
-    rating[1].addEventListener("click",()=>{
-        
-        addRating(1);
-    })
-    rating[2].addEventListener("click",()=>{
-        
-        addRating(2);
-    })
-    rating[3].addEventListener("click",()=>{
-        
-        addRating(3);
-    })
-    rating[4].addEventListener("click",()=>{
-        
-        addRating(4);
-    })
+rating[0].addEventListener("click", () => {
+    addRating(0);
+})
+rating[1].addEventListener("click", () => {
+    addRating(1);
+})
+rating[2].addEventListener("click", () => {
+    addRating(2);
+})
+rating[3].addEventListener("click", () => {
+    addRating(3);
+})
+rating[4].addEventListener("click", () => {
+    addRating(4);
+})
