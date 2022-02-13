@@ -1,4 +1,49 @@
 :root {
+<<<<<<< HEAD
+  --primary-color: hsl(189, 96%, 37%);
+  --secondary-color: hsl(152, 93%, 40%);
+  --tertiary-color: hsl(273, 100%, 50%);
+  --error-color: hsl(5, 100%, 50%);
+  --warning-color: hsl(46, 100%, 50%);
+  --info-color: hsl(175, 96%, 30%);
+  --success-color: hsl(165, 97%, 25%);
+  --light-color: hsl(0, 0%, 98%);
+  --dark-color: hsl(180, 9%, 13%);
+  --grey-color: hsl(276, 3%, 32%);
+  --bx-sh-1: 0px 0px 0.5rem hsla(0, 0%, 0%, 0.1); /* box-shadow */
+  --bx-sh-2: 0px 0px 0.7rem hsla(0, 0%, 0%, 0.2); /* box-shadow */
+  --bx-sh-3: 0px 0px 0.9rem hsla(0, 0%, 0%, 0.3); /* box-shadow */
+  --bx-sh-dark-1: 0px 0px 0.5rem hsla(180, 0%, 0%, 0.1); /* box-shadow */
+  --bx-sh-dark-2: 0px 0px 0.7rem hsla(180, 0%, 0%, 0.2); /* box-shadow */
+  --bx-sh-dark-3: 0px 0px 0.9rem hsla(180, 0%, 0%, 0.3); /* box-shadow */
+  --bx-sh-primary-1: 0px 0px 0.5rem hsla(187, 100%, 50%, 0.1); /* box-shadow */
+  --bx-sh-primary-2: 0px 0px 0.7rem hsl(187, 100%, 50%, 0.2); /* box-shadow */
+  --bx-sh-primary-3: 0px 0px 0.9rem hsl(187, 100%, 50%, 0.3); /* box-shadow */
+  --bx-sh-secondary-1: 0px 0px 0.5rem hsl(152, 93%, 40%, 0.1); /* box-shadow */
+  --bx-sh-secondary-2: 0px 0px 0.7rem hsl(152, 93%, 40%, 0.2); /* box-shadow */
+  --bx-sh-secondary-3: 0px 0px 0.9rem hsl(152, 93%, 40%, 0.3); /* box-shadow */
+  --bx-sh-tertiary-1: 0px 0px 0.5rem hsl(273, 100%, 50%, 0.1); /* box-shadow */
+  --bx-sh-tertiary-2: 0px 0px 0.7rem hsl(273, 100%, 50%, 0.2); /* box-shadow */
+  --bx-sh-tertiary-3: 0px 0px 0.9rem hsl(273, 100%, 50%, 0.3); /* box-shadow */
+  --bx-sh-error-1: 0px 0px 0.5rem hsl(5, 100%, 50%, 0.1); /* box-shadow */
+  --bx-sh-error-2: 0px 0px 0.7rem hsl(5, 100%, 50%, 0.2); /* box-shadow */
+  --bx-sh-error-3: 0px 0px 0.9rem hsl(5, 100%, 50%, 0.3); /* box-shadow */
+  --bx-sh-warning-1: 0px 0px 0.5rem hsl(46, 100%, 50%, 0.1); /* box-shadow */
+  --bx-sh-warning-2: 0px 0px 0.7rem hsl(46, 100%, 50%, 0.2); /* box-shadow */
+  --bx-sh-warning-3: 0px 0px 0.9rem hsl(46, 100%, 50%, 0.3); /* box-shadow */
+  --bx-sh-success-1: 0px 0px 0.5rem hsl(197, 100%, 50%, 0.1); /* box-shadow */
+  --bx-sh-success-2: 0px 0px 0.7rem hsl(197, 100%, 50%, 0.2); /* box-shadow */
+  --bx-sh-success-3: 0px 0px 0.9rem hsl(197, 100%, 50%, 0.3); /* box-shadow */
+  --bx-sh-info-1: 0px 0px 0.5rem hsl(59, 100%, 50%, 0.1); /* box-shadow */
+  --bx-sh-info-2: 0px 0px 0.7rem hsl(59, 100%, 50%, 0.2); /* box-shadow */
+  --bx-sh-info-3: 0px 0px 0.9rem hsl(59, 100%, 50%, 0.3); /* box-shadow */
+  --bx-sh-light-1: 0px 0px 0.5rem hsl(0, 100%, 50%, 0.1); /* box-shadow */
+  --bx-sh-light-2: 0px 0px 0.7rem hsl(0, 100%, 50%, 0.2); /* box-shadow */
+  --bx-sh-light-3: 0px 0px 0.9rem hsl(0, 100%, 50%, 0.3); /* box-shadow */
+  --bx-sh-grey-1: 0px 0px 0.5rem hsl(297, 100%, 50%, 0.1); /* box-shadow */
+  --bx-sh-grey-2: 0px 0px 0.7rem hsl(297, 100%, 50%, 0.2); /* box-shadow */
+  --bx-sh-grey-3: 0px 0px 0.9rem hsl(297, 100%, 50%, 0.3); /* box-shadow */
+=======
   --primary-color-9: hsla(189, 96%, 37%, 0.1);
   --primary-color-8: hsla(189, 96%, 37%, 0.2);
   --primary-color-7: hsla(189, 96%, 37%, 0.3);
@@ -59,7 +104,6 @@
   --info-color-2: hsla(175, 96%, 30%, 0.8);
   --info-color-1: hsla(175, 96%, 30%, 0.9);
   --info-color: hsl(175, 96%, 30%);
-
   --success-color-9: hsla(165, 97%, 25%, 0.1);
   --success-color-8: hsla(165, 97%, 25%, 0.2);
   --success-color-7: hsla(165, 97%, 25%, 0.3);
@@ -110,6 +154,7 @@
   --black-color-2: hsla(0, 0%, 0%, 0.8);
   --black-color-1: hsla(0, 0%, 0%, 0.9);
   --black-color: hsl(0, 0%, 0%);
+  --pink-color: hsl(350, 69%, 59%);
   --bx-sh-1: 0px 0px 0.5rem var(--dark-color-9); /* box-shadow */
   --bx-sh-2: 0px 0px 0.7rem var(--dark-color-8); /* box-shadow */
   --bx-sh-3: 0px 0px 0.9rem var(--dark-color-7); /* box-shadow */
@@ -143,10 +188,19 @@
   --bx-sh-grey-1: 0px 0px 0.5rem var(--grey-color-9); /* box-shadow */
   --bx-sh-grey-2: 0px 0px 0.7rem var(--grey-color-8); /* box-shadow */
   --bx-sh-grey-3: 0px 0px 0.9rem var(--grey-color-7); /* box-shadow */
+<<<<<<< HEAD
 
+>>>>>>> feature/utils
+=======
+>>>>>>> feature/badge
   --font-size: 1rem;
   --pd: 0.5rem;
   --m: 0.5rem;
   --br-thickness: 1px;
   --br-radius: 0.5rem;
+  --blur-1: blur(2px);
+  --blur-2: blur(4px);
+  --blur-3: blur(6px);
+  --blur-4: blur(8px);
+  --blur-5: blur(10px);
 }

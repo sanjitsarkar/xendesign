@@ -1,97 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js" defer></script>
-    <title>XenDesign</title>
-</head>
-<body class="m-4 bg-light col flex-gap-1">
-  <section class="alert-section row flex-gap-1 mt-1 align-center ">
-      <div class="alert">
-   
-          
-        lorem ipsum dolor sit amet
-      <span class="alert-close" onclick="closeAlert(this)">&times;</span>
-      </div>
-      <div class="alert alert-warning">
-        <svg></svg>    
-        lorem ipsum dolor sit amet
-        <span class="alert-close" onclick="closeAlert(this)">&times;</span>
-      </div>
-      <div class="alert alert-success">
-        <svg></svg>    
-   
-        lorem ipsum dolor sit amet
-        <span class="alert-close" onclick="closeAlert(this)">&times;</span>
-      </div>
-      <div class="alert alert-error">
-        <svg></svg>    
-          
-        lorem ipsum dolor sit amet
-      <span class="alert-close" onclick="closeAlert(this)">&times;</span>
 
-      </div>
-      <div class="alert alert-info">
-        <svg></svg>    
-          
-        lorem ipsum dolor sit amet
-        <span class="alert-close" onclick="closeAlert(this)">&times;</span>
-      
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/index.css" />
+  <script src="js/index.js" defer></script>
+  <title>XenDesign</title>
+</head>
+
+<body class="m-4 bg-light col flex-gap-1">
+  <section class="alert-section row flex-gap-1 mt-1 align-center">
+    <div class="alert">
+      lorem ipsum dolor sit amet
+      <span class="alert-close" onclick="closeAlert(this)">&times;</span>
+    </div>
+    <div class="alert alert-warning">
+      <svg></svg>
+      lorem ipsum dolor sit amet
+      <span class="alert-close" onclick="closeAlert(this)">&times;</span>
+    </div>
+    <div class="alert alert-success">
+      <svg></svg>
+
+      lorem ipsum dolor sit amet
+      <span class="alert-close" onclick="closeAlert(this)">&times;</span>
+    </div>
+    <div class="alert alert-error">
+      <svg></svg>
+
+      lorem ipsum dolor sit amet
+      <span class="alert-close" onclick="closeAlert(this)">&times;</span>
+    </div>
+    <div class="alert alert-info">
+      <svg></svg>
+
+      lorem ipsum dolor sit amet
+      <span class="alert-close" onclick="closeAlert(this)">&times;</span>
+    </div>
   </section>
 
-  <section class="avatar-section row flex-gap-1 mt-1 align-center ">
-    <!-- <div class="avatar-container">
-      <div class="avatar-image">
-        <img src="img/avatar.png" alt="avatar">
-      </div>
-      <div class="avatar-name">
-        <h1>XenDesign</h1>
-        <h2>Web Developer</h2>
-      </div>
-    </div> -->
-
-    <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt="" class="avatar avatar-xsm">
-    <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt="" class="avatar avatar-sm">
-    <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt="" class="avatar avatar-md">
-    <!-- <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt="" class="avatar"> -->
-    <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt="" class="avatar avatar-lg">
-    <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt="" class="avatar avatar-xl ">
-  
+  <section class="avatar-section row flex-gap-1 mt-1 align-center">
+    <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt=""
+      class="avatar avatar-xsm" />
+    <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt=""
+      class="avatar avatar-sm" />
+    <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt=""
+      class="avatar avatar-md" />
+    <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt=""
+      class="avatar avatar-lg" />
+    <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt=""
+      class="avatar avatar-xl" />
   </section>
 
   <section class="badge-section row flex-gap-1 mt-1 align-center">
-   <div class="badge-holder">
-    <i class="fa fa-user grid place-content-center w-12 h-12 bg-dark p-2 br-full text-light"></i>
-    <span class="badge badge-success">12</span>
-  </div>
-   <div class="badge-holder">
-    <i class="fa fa-message grid place-content-center w-12 h-12 bg-dark p-2 br-full text-light"></i>
-    <span class="badge badge-info">102</span>
-  </div>
-  <div class="avatar-badge-container">
-    <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt="" class="avatar avatar-xl ">
-    <span class="avatar-badge badge-primary">15</span>
-  </div>
-  <div class="avatar-badge-container">
-    <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt="" class="avatar avatar-xl ">
-    <span class="avatar-badge badge-error"></span>
-  </div>
-  <div class="avatar-badge-container">
-    <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt="" class="avatar avatar-xl ">
-    <span class="avatar-badge badge-warning"></span>
-  </div>
-  <div class="avatar-badge-container">
-    <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt="" class="avatar avatar-xl ">
-    <span class="avatar-badge badge-info"></span>
-  </div>
-  <div class="avatar-badge-container">
-    <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt="" class="avatar avatar-xl ">
-    <span class="avatar-badge badge-secondary"></span>
-  </div>
+    <div class="badge-holder">
+      <i class="fa fa-user grid place-content-center w-12 h-12 bg-dark p-2 br-full text-light"></i>
+      <span class="badge badge-success">12</span>
+    </div>
+    <div class="badge-holder">
+      <i class="fa fa-message grid place-content-center w-12 h-12 bg-dark p-2 br-full text-light"></i>
+      <span class="badge badge-info">102</span>
+    </div>
+    <div class="avatar-badge-container">
+      <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt=""
+        class="avatar avatar-xl" />
+      <span class="avatar-badge badge-primary">15</span>
+    </div>
+    <div class="avatar-badge-container">
+      <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt=""
+        class="avatar avatar-xl" />
+      <span class="avatar-badge badge-error"></span>
+    </div>
+    <div class="avatar-badge-container">
+      <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt=""
+        class="avatar avatar-xl" />
+      <span class="avatar-badge badge-warning"></span>
+    </div>
+    <div class="avatar-badge-container">
+      <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt=""
+        class="avatar avatar-xl" />
+      <span class="avatar-badge badge-info"></span>
+    </div>
+    <div class="avatar-badge-container">
+      <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg" alt=""
+        class="avatar avatar-xl" />
+      <span class="avatar-badge badge-secondary"></span>
+    </div>
   </section>
   <section class="button-section row flex-gap-1 mt-1 align-center items-center">
     <button class="btn btn-disabled">Disabled</button>
@@ -117,12 +113,12 @@
     <button class="btn btn-round btn-primary">
       <i class="fa fa-shopping-cart"></i>
     </button>
-    <button class="btn btn-round-md btn-secondary">
+    <button class="btn btn-round btn-secondary">
       <i class="fa fa-user"></i>
       <span class="badge badge-error">12</span>
-
     </button>
   </section>
+<<<<<<< HEAD
   <section class="section-card row flex-gap-1 mt-1 align-center">
     <div class="card w-80">
     <div class="card-header">
@@ -235,5 +231,8 @@
   </div>
     </div>
 </section>
+=======
+>>>>>>> feature/button
 </body>
+
 </html>
