@@ -647,3 +647,131 @@
 .list-decimal {
   list-style-type: decimal;
 }
+.bx-sh-1 {
+  box-shadow: var(--bx-sh-1);
+}
+.bx-sh-2 {
+  box-shadow: var(--bx-sh-2);
+}
+.bx-sh-3 {
+  box-shadow: var(--bx-sh-3);
+}
+.bx-sh-dark-1 {
+  box-shadow: var(--bx-sh-dark-1);
+}
+.bx-sh-dark-2 {
+  box-shadow: var(--bx-sh-dark-2);
+}
+.bx-sh-dark-3 {
+  box-shadow: var(--bx-sh-dark-3);
+}
+.bx-sh-primary-1 {
+  box-shadow: var(--bx-sh-primary-1);
+}
+.bx-sh-primary-2 {
+  box-shadow: var(--bx-sh-primary-2);
+}
+.bx-sh-primary-3 {
+  box-shadow: var(--bx-sh-primary-3);
+}
+.bx-sh-secondary-1 {
+  box-shadow: var(--bx-sh-secondary-1);
+}
+.bx-sh-secondary-2 {
+  box-shadow: var(--bx-sh-secondary-2);
+}
+.bx-sh-secondary-3 {
+  box-shadow: var(--bx-sh-secondary-3);
+}
+.bx-sh-tertiary-1 {
+  box-shadow: var(--bx-sh-tertiary-1);
+}
+.bx-sh-tertiary-2 {
+  box-shadow: var(--bx-sh-tertiary-2);
+}
+.bx-sh-tertiary-3 {
+  box-shadow: var(--bx-sh-tertiary-3);
+}
+.b {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--dark-color-3);
+}
+.b-solid {
+  border-style: solid;
+}
+.b-dotted {
+  border-style: dotted;
+}
+.b-dashed {
+  border-style: dashed;
+}
+.b-double {
+  border-style: double;
+}
+.b-inset {
+  border-style: inset;
+}
+.b-outset {
+  border-style: outset;
+}
+.b-ridge {
+  border-style: ridge;
+}
+.b-groove {
+  border-style: groove;
+}
+.b-1 {
+  border-width: 1px;
+}
+.b-2 {
+  border-width: 2px;
+}
+.b-3 {
+  border-width: 3px;
+}
+.b-4 {
+  border-width: 4px;
+}
+.b-5 {
+  border-width: 5px;
+}
+.back-blur-1 {
+  backdrop-filter: var(--blur-1);
+}
+.back-blur-2 {
+  backdrop-filter: var(--blur-2);
+}
+.back-blur-3 {
+  backdrop-filter: var(--blur-3);
+}
+.back-blur-4 {
+  backdrop-filter: var(--blur-4);
+}
+.back-blur-5 {
+  backdrop-filter: var(--blur-5);
+}
+.back-none {
+  backdrop-filter: none;
+}
+.filter-blur-1 {
+  filter: var(--blur-1);
+}
+.filter-blur-2 {
+  filter: var(--blur-2);
+}
+.filter-blur-3 {
+  filter: var(--blur-3);
+}
+.filter-blur-4 {
+  filter: var(--blur-4);
+}
+.filter-blur-5 {
+  filter: var(--blur-5);
+}
+.filter-none {
+  filter: none;
+}
+.bx-sh-none {
+  box-shadow: none;
+}
