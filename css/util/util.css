@@ -709,3 +709,42 @@
 .b-5 {
   border-width: 5px;
 }
+.back-blur-1 {
+  backdrop-filter: var(--blur-1);
+}
+.back-blur-2 {
+  backdrop-filter: var(--blur-2);
+}
+.back-blur-3 {
+  backdrop-filter: var(--blur-3);
+}
+.back-blur-4 {
+  backdrop-filter: var(--blur-4);
+}
+.back-blur-5 {
+  backdrop-filter: var(--blur-5);
+}
+.back-none {
+  backdrop-filter: none;
+}
+.filter-blur-1 {
+  filter: var(--blur-1);
+}
+.filter-blur-2 {
+  filter: var(--blur-2);
+}
+.filter-blur-3 {
+  filter: var(--blur-3);
+}
+.filter-blur-4 {
+  filter: var(--blur-4);
+}
+.filter-blur-5 {
+  filter: var(--blur-5);
+}
+.filter-none {
+  filter: none;
+}
+.bx-sh-none {
+  box-shadow: none;
+}
