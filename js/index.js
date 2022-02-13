@@ -14,3 +14,4 @@ output.textContent = slider.value;
 slider.oninput = function () {
   output.textContent = this.value;
 };
+
