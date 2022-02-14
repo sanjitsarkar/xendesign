@@ -4,6 +4,7 @@
   flex-direction: column;
 }
 .slider {
+  cursor: pointer;
   padding: 0;
   -webkit-appearance: none;
   appearance: none;
