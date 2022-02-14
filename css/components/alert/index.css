@@ -7,7 +7,7 @@
   box-shadow: var(--bx-sh-3);
   background: var(--primary-color);
   color: var(--light-color);
-  z-index: 9999;
+  z-index: 99;
   width: fit-content;
   font-size: calc(var(--font-size));
   border-bottom: 3px solid var(--light-color);
