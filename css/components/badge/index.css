@@ -37,12 +37,48 @@
   background-color: var(--error-color);
   color: var(--light-color);
 }
-.badge-success {
+
+.badge {
+  right: -5%;
+  top: -5%;
+  position: absolute;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  width: 1.5rem;
+  padding: 0.25rem;
+  height: 1.5rem;
+  font-size: small;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+.badge-status {
+  background-color: var(--grey-color);
+}
+.badge-primary {
+  background-color: var(--primary-color);
+}
+.badge-secondary {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+}
+.badge-tertiary {
+  background-color: var(--tertiary-color);
+  color: var(--light-color);
+}
+.badge-error,
+.badge-status .dnd {
+  background-color: var(--error-color);
+  color: var(--light-color);
+}
+.badge-success,
+.badge-status .online {
   background-color: var(--success-color);
   color: var(--light-color);
 }
 
-.badge-warning {
+.badge-warning,
+.badge-status .idle {
   background-color: var(--warning-color);
   color: var(--dark-color);
 }
