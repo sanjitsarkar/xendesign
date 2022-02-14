@@ -1,9 +1,14 @@
 //Method to close Alert
 <<<<<<< HEAD
+<<<<<<< HEAD
 function closeAlert(elem){
+=======
+function closeAlert(elem) {
+>>>>>>> feature/button
     elem.parentNode.classList.add('alert-hide');
-    setTimeout(()=>{
+    setTimeout(() => {
         elem.parentNode.style.display = 'none';
+<<<<<<< HEAD
     elem.parentNode.classList.remove('alert-hide');
     
     
@@ -16,5 +21,10 @@ function closeAlert(elem) {
     elem.parentNode.style.display = "none";
     elem.parentNode.classList.remove("alert-hide");
   }, 300);
+}
+>>>>>>> feature/button
+=======
+        elem.parentNode.classList.remove('alert-hide');
+    }, 300)
 }
 >>>>>>> feature/button

@@ -1,4 +1,5 @@
 .badge-holder {
+<<<<<<< HEAD
   cursor: pointer;
   position: relative;
   transform: scale(1);
@@ -37,6 +38,39 @@
   background-color: var(--error-color);
   color: var(--light-color);
 }
+=======
+  position: relative;
+}
+.badge {
+  right: -5%;
+  top: -5%;
+  position: absolute;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  width: 1.5rem;
+  padding: 0.25rem;
+  height: 1.5rem;
+  font-size: small;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+.badge-primary {
+  background-color: var(--primary-color);
+}
+.badge-secondary {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+}
+.badge-tertiary {
+  background-color: var(--tertiary-color);
+  color: var(--light-color);
+}
+.badge-error {
+  background-color: var(--error-color);
+  color: var(--light-color);
+}
+>>>>>>> 3d0ef93cb18d5a67a8e3fc3070796cb3c775b835
 .badge-success {
   background-color: var(--success-color);
   color: var(--light-color);

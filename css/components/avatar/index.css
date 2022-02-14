@@ -1,17 +1,9 @@
 .avatar {
   border-radius: 50%;
-<<<<<<< HEAD
-  border: 0.3rem solid var(--light-color);
-  width: 5rem;
-  height: 5rem;
-  transform: scale(1);
-
-=======
   border: 5px solid var(--light-color);
   width: 5rem;
   height: 5rem;
   transform: scale(1);
->>>>>>> feature/button
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   box-shadow: var(--bx-sh-3);
 }
