@@ -1,5 +1,4 @@
 .badge-holder {
-<<<<<<< HEAD
   cursor: pointer;
   position: relative;
   transform: scale(1);
@@ -38,9 +37,7 @@
   background-color: var(--error-color);
   color: var(--light-color);
 }
-=======
-  position: relative;
-}
+
 .badge {
   right: -5%;
   top: -5%;
@@ -70,7 +67,6 @@
   background-color: var(--error-color);
   color: var(--light-color);
 }
->>>>>>> 3d0ef93cb18d5a67a8e3fc3070796cb3c775b835
 .badge-success {
   background-color: var(--success-color);
   color: var(--light-color);

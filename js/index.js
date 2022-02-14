@@ -1,6 +1,7 @@
 //Method to close Alert
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function closeAlert(elem){
 =======
 function closeAlert(elem) {
@@ -15,6 +16,8 @@ function closeAlert(elem) {
     },300)
     }
 =======
+=======
+>>>>>>> feature/card
 function closeAlert(elem) {
   elem.parentNode.classList.add("alert-hide");
   setTimeout(() => {
@@ -22,9 +25,12 @@ function closeAlert(elem) {
     elem.parentNode.classList.remove("alert-hide");
   }, 300);
 }
+<<<<<<< HEAD
 >>>>>>> feature/button
 =======
         elem.parentNode.classList.remove('alert-hide');
     }, 300)
 }
 >>>>>>> feature/button
+=======
+>>>>>>> feature/card
