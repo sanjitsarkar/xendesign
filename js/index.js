@@ -9,19 +9,23 @@ function closeAlert(elem) {
 //Slider
 const slider = document.querySelector("#slider");
 const output = document.querySelector("#slider-value");
+if(output && slider)
+{
 output.textContent = slider.value;
 slider.oninput = function () {
     output.textContent = this.value;
+}
 }
 
 //Modal
 const modal = document.querySelector("#modal");
 var openModal = document.querySelector("#open-modal");
 var close = document.querySelector("#close");
-
+if(openModal)
 openModal.onclick = function () {
     modal.classList.add('modal-open')
 }
+if(close)
 close.onclick = function () {
     modal.classList.remove('modal-open')
 }
@@ -54,6 +58,8 @@ const addRating = (n) => {
         rating[i].classList.add('rating-active')
     }
 }
+if(rating.length)
+{
 rating[0].addEventListener("click", () => {
     addRating(0);
 })
@@ -69,3 +75,4 @@ rating[3].addEventListener("click", () => {
 rating[4].addEventListener("click", () => {
     addRating(4);
 })
+}

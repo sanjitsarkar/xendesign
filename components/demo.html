@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js" defer></script>
+    <title>XenDesign</title>
+</head>
+
+<body class="m-4 bg-light col flex-gap-1">
+    <section class="alert-section row flex-gap-1 mt-1 align-center">
+        <div class="alert">
+            lorem ipsum dolor sit amet
+            <span class="alert-close" onclick="closeAlert(this)">&times;</span>
+        </div>
+        <div class="alert alert-warning">
+            <svg></svg>
+            lorem ipsum dolor sit amet
+            <span class="alert-close" onclick="closeAlert(this)">&times;</span>
+        </div>
+        <div class="alert alert-success">
+            <svg></svg>
+
+            lorem ipsum dolor sit amet
+            <span class="alert-close" onclick="closeAlert(this)">&times;</span>
+        </div>
+        <div class="alert alert-error">
+            <svg></svg>
+
+            lorem ipsum dolor sit amet
+            <span class="alert-close" onclick="closeAlert(this)">&times;</span>
+        </div>
+        <div class="alert alert-info">
+            <svg></svg>
+
+            lorem ipsum dolor sit amet
+            <span class="alert-close" onclick="closeAlert(this)">&times;</span>
+        </div>
+    </section>
+
+    <section class="avatar-section row flex-gap-1 mt-1 align-center">
+        <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
+            alt="Cool Profile" class="avatar avatar-xsm" />
+        <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
+            alt="Cool Profile" class="avatar avatar-sm" />
+        <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
+            alt="Cool Profile" class="avatar avatar-md" />
+        <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
+            alt="Cool Profile" class="avatar avatar-lg" />
+        <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
+            alt="Cool Profile" class="avatar avatar-xl" />
+    </section>
+
+    <section class="badge-section row flex-gap-1 mt-1 align-center">
+        <div class="badge-holder">
+            <i class="fa fa-user grid place-content-center w-12 h-12 bg-dark p-2 br-full text-light"></i>
+            <span class="badge badge-success">12</span>
+        </div>
+        <div class="badge-holder">
+            <i class="fa fa-message grid place-content-center w-12 h-12 bg-dark p-2 br-full text-light"></i>
+            <span class="badge badge-info">102</span>
+        </div>
+        <div class="avatar-badge-container">
+            <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
+                alt="Cool Profile" class="avatar avatar-xl" />
+            <span class="avatar-badge badge-primary">15</span>
+        </div>
+        <div class="avatar-badge-container">
+            <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
+                alt="Cool Profile" class="avatar avatar-xl" />
+            <span class="avatar-badge badge-error"></span>
+        </div>
+        <div class="avatar-badge-container">
+            <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
+                alt="Cool Profile" class="avatar avatar-xl" />
+            <span class="avatar-badge badge-warning"></span>
+        </div>
+        <div class="avatar-badge-container">
+            <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
+                alt="Cool Profile" class="avatar avatar-xl" />
+            <span class="avatar-badge badge-info"></span>
+        </div>
+        <div class="avatar-badge-container">
+            <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
+                alt="Cool Profile" class="avatar avatar-xl" />
+            <span class="avatar-badge badge-secondary"></span>
+        </div>
+    </section>
+    <section class="button-section row flex-gap-1 mt-1 align-center items-center">
+        <button class="btn btn-disabled">Disabled</button>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-tertiary">Tertiary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-error">Error</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-light">Light</button>
+        <button class="btn btn-dark">Dark</button>
+        <button class="btn btn-grey">Grey</button>
+        <button class="btn btn-outline-primary">Primary Outlined</button>
+        <button class="btn btn-outline-secondary">Secondary Outlined</button>
+        <button class="btn btn-outline-tertiary">Tertiary Outlined</button>
+        <button class="btn btn-outline-success">Success Outlined</button>
+        <button class="btn btn-outline-warning">Warning Outlined</button>
+        <button class="btn btn-outline-error">Error Outlined</button>
+        <button class="btn btn-outline-info">Info Outlined</button>
+        <button class="btn btn-outline-dark">Dark Outlined</button>
+        <button class="btn btn-outline-grey">Grey Outlined</button>
+        <button class="btn btn-round btn-primary">
+            <i class="fa fa-shopping-cart"></i>
+        </button>
+        <button class="btn btn-round-md btn-secondary">
+            <i class="fa fa-user"></i>
+            <span class="badge badge-error">12</span>
+        </button>
+        <a href="" class="btn-link">Link Button</a>
+        <button class="btn btn-float-right bg-pink text-light text-light">
+            <i class="fa fa-heart"></i>
+        </button>
+        <button class="btn btn-float-left-lg btn-dark">
+            <i class="fa fa-add"></i>
+        </button>
+    </section>
+    <section class="section-card row flex-gap-1 mt-1 align-center">
+        <div class="card card-lg">
+            <div class="card-header">
+                <div class="card-badge bg-primary">
+                    Trending
+                </div>
+                <img src="https://s.yimg.com/os/creatr-uploaded-images/2021-09/de2e6bc0-1a9b-11ec-bef7-5c6aa1cb549c"
+                    alt="Iphone 13S">
+            </div>
+            <div class="card-bottom">
+                <div class="card-body">
+                    <div class="card-title">Iphone 13S</div>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur. Obcaecati unde
+                        ipsum nihil
+                        sapiente quos! Doloribus, officia dignissimos!
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <div class="row items-center flex-gap-05">
+                        <h4 class="o-70 text-600">Price</h4>
+                        <h4 class="text-base text-md-bold">₹10200000</h4>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-round-md btn-dark">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                        <button class=" btn-round-md bg-pink text-light">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <button class="btn btn-round-md btn-secondary">
+                            <i class="fa fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card card-md">
+            <div class="card-header">
+                <img src="https://images.samsung.com/uk/smartphones/galaxy-s20/images/kv/galaxy-s20_highlights_kv_00.jpg"
+                    alt="Samsung X3S" class="w-full">
+            </div>
+            <div class="card-bottom">
+                <div class="card-body">
+                    <div class="card-title">Samsung X3S</div>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur. Obcaecati unde
+                        ipsum nihil
+                        sapiente quos! Doloribus, officia dignissimos!
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <div class="row items-center flex-gap-05">
+                        <h4 class="o-70 text-600">Price</h4>
+                        <h4 class="text-base text-md-bold">₹1000200000</h4>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-round-md btn-dark">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                        <button class=" btn-round-md bg-pink text-light">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <button class="btn btn-round-md btn-secondary">
+                            <i class="fa fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-badge bg-dark">
+                    Best Selling</div>
+                <img src="https://oasis.opstatics.com/content/dam/oasis/page/2021/operation/1227/store/pc/01-Featured-2.jpg"
+                    alt="One Plus 10" class="h-40 w-full">
+            </div>
+            <div class="card-bottom">
+                <div class="card-body">
+                    <div class="card-title">One Plus 10</div>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur. Obcaecati unde
+                        ipsum nihil
+                        sapiente quos! Doloribus, officia dignissimos!
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <div class="row items-center flex-gap-05">
+                        <h4 class="o-70 text-600">Price</h4>
+                        <h4 class="text-base text-md-bold">₹1000200000</h4>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-round-md btn-dark">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                        <button class=" btn-round-md bg-pink text-light">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <button class="btn btn-round-md btn-secondary">
+                            <i class="fa fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-text-overlay bg-dark-2 text-light text-2xl">
+                    Best Selling</div>
+                <img src="https://oasis.opstatics.com/content/dam/oasis/page/2021/operation/1227/store/pc/01-Featured-2.jpg"
+                    alt="One Plus 10" class="h-40 w-full">
+            </div>
+            <div class="card-bottom">
+                <div class="card-body">
+                    <div class="card-title">One Plus 10</div>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur. Obcaecati unde
+                        ipsum nihil
+                        sapiente quos! Doloribus, officia dignissimos!
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <div class="row items-center flex-gap-05">
+                        <h4 class="o-70 text-600">Price</h4>
+                        <h4 class="text-base text-md-bold">₹1000200000</h4>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-round-md btn-dark">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                        <button class=" btn-round-md bg-pink text-light">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <button class="btn btn-round-md btn-secondary">
+                            <i class="fa fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card card-horizontal">
+            <div class="card-header">
+                <div class="card-badge bg-tertiary">
+                    Most Rated</div>
+                <img src="https://i01.appmifile.com/webfile/globalimg/dongxuechun/Lark20211119-195301.jpg?width=398&height=320"
+                    alt="Poco F10">
+            </div>
+            <div class="card-bottom">
+                <div class="card-body">
+                    <div class="card-title">Poco F10</div>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur. Obcaecati unde
+                        ipsum nihil
+                        sapiente quos! Doloribus, officia dignissimos!
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <div class="row items-center flex-gap-05">
+                        <h4 class="o-70 text-600">Price</h4>
+                        <h4 class="text-base text-md-bold">₹1000200000</h4>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-round-md btn-dark">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                        <button class=" btn-round-md bg-pink text-light">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                        <button class="btn btn-round-md btn-secondary">
+                            <i class="fa fa-share"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card w-82 h-52 ">
+            <div class="card-text-overlay bg-black-2 w-full h-full text-3xl text-secondary  b-solid br-secondary">
+                Best Selling</div>
+            <img src="https://oasis.opstatics.com/content/dam/oasis/page/2021/operation/1227/store/pc/01-Featured-2.jpg"
+                alt="One Plus 10" class="h-full w-full">
+
+        </div>
+        <div class="card w-72 ">
+            <div class="card-body">
+                <h1 class="card-title">
+                    Text Only Card
+                </h1>
+                <p class="card-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repellat iusto explicabo omnis
+                    aliquam
+                    dignissimos aperiam consectetur aut quod in.
+                </p>
+            </div>
+            <div class="card-footer">
+                <div class="row items-center flex-gap-05">
+                    <h4 class="o-70 text-600">Price</h4>
+                    <h4 class="text-base text-md-bold">₹1000200000</h4>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-round-md btn-dark">
+                        <i class="fa fa-shopping-cart"></i>
+                    </button>
+                    <button class=" btn-round-md bg-pink text-light">
+                        <i class="fa fa-heart"></i>
+                    </button>
+                    <button class="btn btn-round-md btn-secondary">
+                        <i class="fa fa-share"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="image-section row flex-gap-1 mt-1 align-center ">
+        <img src="https://images.unsplash.com/photo-1644325781022-3e1177d11bfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+            alt="" srcset="" class="img w-72 h-72">
+        <img src="https://images.unsplash.com/photo-1644351032803-9c6f42458ea7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+            alt="" srcset="" class="img img-rounded w-72 h-72">
+        <img src="https://images.unsplash.com/photo-1644365240979-da902297897f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+            alt="" srcset="" class="img img-responsive br-lg  w-52">
+    </section>
+    <section class="input-section row flex-gap-1 mt-1 align-center ">
+        <input type="text" placeholder="Enter your name" class="input">
+        <input type="text" placeholder="Enter your name" class="input input-dark">
+        <input type="text" placeholder="Enter your name" class="input input-success">
+        <input type="text" placeholder="Enter your name" class="input input-warning">
+        <input type="text" placeholder="Enter your name" class="input input-error">
+        <div class="input-box input input-light">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Enter your name" class="input">
+
+        </div>
+        <div class="input-box input input-dark">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Enter your name" class="input">
+
+        </div>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="switch-slider"></span>
+        </label>
+        <label class="checkbox-container">One
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+        </label>
+
+        <label class="checkbox-container">Two
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="radio-container">Male
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label>
+        <label class="radio-container">Female
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+        </label>
+        <div class="silder-contaier row flex-gap-1 items-center">
+            <input type="range" min="1" max="100" value="0" class="slider w-96" id="slider">
+            <div id="slider-value" class="slider-value"></div>
+        </div>
+    </section>
+    <section class="modal-section">
+        <button id="open-modal" class="btn btn-success">Open Modal</button>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <p>Write your modal content here</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-toast">
+        <div class="toast-container" id="toast">
+            Hello, I'm a toast...
+        </div>
+        <button class="btn btn-dark" id="show-toast" onclick="showToast('toast',1000);">Show Toast</button>
+    </section>
+    <section class="section-rating">
+        <div class="rating-bar">
+            <span class="fa fa-star rating"></span>
+            <span class="fa fa-star rating"></span>
+            <span class="fa fa-star rating"></span>
+            <span class="fa fa-star rating"></span>
+            <span class="fa fa-star rating"></span>
+        </div>
+    </section>
+</body>
+
+</html>
