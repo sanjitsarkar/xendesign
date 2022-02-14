@@ -1,38 +1,63 @@
-.toast-container{
-/* display:none; */
-position: fixed;
-top: 10%;
-left:40%; 
-transform: translateX(-50%);
-padding:calc(var(--pd)*1.2) calc(var(--pd)*2);
-border-radius:calc(var(--br-radius)*.5);
-box-shadow:0 0 2rem rgba(0, 0, 0, 0.281);
-background: var(--primary-color);
-color:var(--light-color);
-z-index: 9999;
-width:fit-content;
-font-size:calc(var(--font-size));
-border-bottom: 3px solid var(--light-color);
-cursor: pointer;
-opacity: .5;
-filter:blur(10px);
-transform: scale(0);
-
-transition: all .2s ease-in-out;
+.toast-container {
+  position: fixed;
+  top: 10%;
+  left: 40%;
+  transform: translateX(-50%);
+  padding: calc(var(--pd) * 1.2) calc(var(--pd) * 2);
+  border-radius: calc(var(--br-radius) * 0.5);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.281);
+  background: var(--primary-color);
+  color: var(--light-color);
+  z-index: 9999;
+  width: fit-content;
+  font-size: calc(var(--font-size));
+  border-bottom: 3px solid var(--light-color);
+  cursor: pointer;
+  opacity: 0.5;
+  filter: blur(10px);
+  transform: scale(0);
+  transition: all 0.2s ease-in-out;
+}
+.toast-primary {
+  background-color: var(--primary-color);
+}
+.toast-secondary {
+  background-color: var(--secondary-color);
+}
+.toast-tertiary {
+  background-color: var(--tertiary-color);
+}
+.toast-dark {
+  background-color: var(--dark-color);
+}
+.toast-error {
+  background-color: var(--error-color);
+}
+.toast-info {
+  background-color: var(--info-color);
+}
+.toast-warning {
+  background-color: var(--warning-color);
+  color: var(--dark-color);
+}
+.toast-success {
+  background-color: var(--success-color);
+}
+.toast-dark {
+  background-color: var(--dark-color);
+}
+.toast-light {
+  background-color: var(--light-color);
+  border-color: var(--dark-color);
+  color: var(--dark-color);
+}
+.toast-open {
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1;
+  display: block;
 }
 
-.toast-open{
-    transform: scale(1);
-    filter:blur(0px);
-
-    opacity: 1;
-    display:block;
-
+.toast-hide {
+  display: none;
 }
-
-.toast-hide{
-
-display:none;
-
-}
-

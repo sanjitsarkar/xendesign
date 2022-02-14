@@ -1,32 +1,46 @@
 @import url("../slider/index.css");
 
-input,
-textarea {
+.input {
   display: inline-block;
-  border: 0;
-  padding: 0.6em 0.7em;
+  border: 1px solid transparent;
   border-radius: 0.2rem;
-  background-color: var(--dark-color-8);
-
+  padding: 0.6em 0.7em;
+  background-color: transparent;
   outline: none;
-  color: var(--light-color);
-  border: 1px solid var(--dark-color-8);
   font-size: var(--font-size);
   transition: all 0.3s ease-in-out;
 }
-.input-group{
-  display:flex;
-  flex-direction:column;
-  flex-wrap:wrap;
-  row-gap:.5rem;
-  column-gap:.5rem;
+.input-box {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
 }
-input:hover,
-textarea:hover {
+.input-box .input {
+  display: inline-block;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.input:hover {
   border: 1px solid var(--primary-color);
 }
-input:focus,
-textarea:focus {
+.input:focus {
+  border: 1px solid var(--secondary-color);
+}
+.input-box .input:hover {
+  border: none;
+}
+.input-box .input:focus {
+  border: none;
+}
+
+.input-box ~ .input:hover {
+  border: 1px solid var(--primary-color);
+}
+.input-box ~ .input:focus {
   border: 1px solid var(--secondary-color);
 }
 .input-primary-light {
@@ -41,18 +55,36 @@ textarea:focus {
   background-color: var(--tertiary-color-8);
   color: var(--dark-color);
 }
-.input-error::placeholder,
-.input-success::placeholder {
-  color: var(--light-color-4);
+
+.input-success::placeholder,
+.input-success .input::placeholder {
+  color: var(--light-color-3);
 }
-.input-dark {
-  background-color: var(--dark-color-8);
+.input-error::placeholder,
+.input-error .input::placeholder {
+  color: var(--light-color-2);
+}
+
+.input-light {
+  background-color: var(--dark-color-9);
+  color: var(--light-color);
+}
+.input-light i {
+  color: var(--dark-color-4);
+}
+.input-light input {
   color: var(--dark-color);
 }
-.input-light {
+.input-dark input {
+  color: var(--light-color);
+}
+.input-dark {
   background-color: var(--light-color-8);
 
   color: var(--dark-color);
+}
+.input-dark i {
+  color: var(--light-color-4);
 }
 .input-success {
   background-color: var(--success-color);
@@ -65,7 +97,8 @@ textarea:focus {
 .input-warning {
   background-color: var(--warning-color);
 }
-.input-warning::placeholder {
+.input-warning::placeholder,
+.input-warning .input::placeholder {
   color: var(--dark-color-4);
 }
 
@@ -76,14 +109,12 @@ textarea:focus {
   height: 1.5rem;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The switch-slider */
 .switch-slider {
   position: absolute;
   cursor: pointer;
@@ -102,8 +133,8 @@ textarea:focus {
   content: "";
   height: 1.3rem;
   width: 1.3rem;
-  left: 0.15rem;
-  bottom: 0.15rem;
+  left: 0.1rem;
+  bottom: 0.1rem;
   background-color: var(--light-color);
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -130,14 +161,12 @@ input:checked + .switch-slider:before {
   padding-left: 2rem;
   cursor: pointer;
   font-size: 1rem;
-  color: var(--dark-color);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-/* Hide the browser's default checkbox */
 .checkbox-container input,
 .radio-container input {
   position: absolute;
@@ -147,7 +176,6 @@ input:checked + .switch-slider:before {
   width: 0;
 }
 
-/* Create a custom checkbox */
 .checkbox-container .checkmark {
   position: absolute;
   top: 0;
@@ -158,32 +186,27 @@ input:checked + .switch-slider:before {
   background-color: var(--grey-color-6);
 }
 
-/* On mouse-over, add a grey background color */
 .checkbox-container:hover input ~ .checkmark {
   background-color: var(--grey-color-4);
 }
 
-/* When the checkbox is checked, add a blue background */
 .checkbox-container input:checked ~ .checkmark {
   background-color: var(--primary-color);
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
 .checkbox-container input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the checkmark/indicator */
 .checkbox-container .checkmark:after {
   left: 0.5rem;
-  top: 0.3rem;
+  top: 0.35rem;
   width: 0.4rem;
   height: 0.7rem;
   border: solid var(--light-color);
@@ -193,29 +216,6 @@ input:checked + .switch-slider:before {
   transform: rotate(45deg);
 }
 
-.radio-container {
-  /* display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; */
-}
-
-/* Hide the browser's default radio button */
-.radio-container input {
-  /* position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0; */
-}
-
-/* Create a custom radio button */
 .radio-container .checkmark {
   position: absolute;
   top: 0;
@@ -223,21 +223,17 @@ input:checked + .switch-slider:before {
   height: 1.5rem;
   width: 1.5rem;
   background-color: var(--grey-color-6);
-
   border-radius: 50%;
 }
 
-/* On mouse-over, add a grey background color */
 .radio-container:hover input ~ .checkmark {
   background-color: var(--grey-color-4);
 }
 
-/* When the radio button is checked, add a blue background */
 .radio-container input:checked ~ .checkmark {
   background-color: var(--primary-color);
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
 .radio-container .checkmark:after {
   content: "";
   position: absolute;
@@ -248,7 +244,6 @@ input:checked + .switch-slider:before {
   display: block;
 }
 
-/* Style the indicator (dot/circle) */
 .radio-container .checkmark:after {
   top: 50%;
   left: 50%;
@@ -256,5 +251,5 @@ input:checked + .switch-slider:before {
   height: 0.5rem;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: va(--light-color);
+  background: var(--light-color);
 }
