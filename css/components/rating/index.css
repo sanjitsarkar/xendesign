@@ -1,8 +1,0 @@
-.rating{
-  color:rgb(128, 128, 128); 
-  cursor:pointer; 
-}
-
-.rating-active{
-    color:var(--warning-color);
-}
