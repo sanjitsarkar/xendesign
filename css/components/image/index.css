@@ -1,0 +1,20 @@
+img,
+.img {
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.img-rounded {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+.img:hover {
+  box-shadow: var(--bx-sh-1);
+}
