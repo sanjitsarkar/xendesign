@@ -10,7 +10,6 @@ function closeAlert(elem) {
 const slider = document.querySelector("#slider");
 const output = document.querySelector("#slider-value");
 output.textContent = slider.value;
-
 slider.oninput = function () {
     output.textContent = this.value;
 }
@@ -33,23 +32,4 @@ window.onclick = function (event) {
     if (event.target == modal) {
         modal.classList.remove('modal-open')
     }
-}
-
-
-
-//Toast
-
-const showToast = (container,duration=1000) => {
-const toast = document.querySelector(`#${container}`);
-toast.classList.add('toast-open');
-setTimeout(()=>{ 
-    
-    toast.classList.remove('toast-open');
-    // toast.classList.add('toast-hide');
-
-},
-duration
-)
-
-
 }
