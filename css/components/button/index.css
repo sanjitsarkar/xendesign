@@ -65,6 +65,7 @@ input[type="submit"] {
   background-color: var(--primary-color);
   color: var(--light-color);
 }
+
 .btn-secondary {
   background-color: var(--secondary-color);
   color: var(--light-color);
@@ -111,44 +112,80 @@ input[type="submit"] {
 .btn-outline-tertiary,
 .btn-outline-primary {
   border: 0.5px solid;
+  background-color: var(--light-color);
 }
 .btn-outline-primary {
   border-color: var(--primary-color);
   color: var(--primary-color);
 }
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
 .btn-outline-secondary {
   border-color: var(--secondary-color);
   color: var(--secondary-color);
+}
+.btn-outline-secondary:hover {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
 }
 .btn-outline-tertiary {
   border-color: var(--tertiary-color);
   color: var(--tertiary-color);
 }
+.btn-outline-tertiary:hover {
+  background-color: var(--tertiary-color);
+  color: var(--light-color);
+}
 .btn-outline-error {
   border-color: var(--error-color);
   color: var(--error-color);
+}
+.btn-outline-error:hover {
+  background-color: var(--error-color);
+  color: var(--light-color);
 }
 .btn-outline-warning {
   background: var(--dark-color);
   border-color: var(--warning-color);
   color: var(--warning-color);
 }
+.btn-outline-warning:hover {
+  background-color: var(--warning-color);
+  color: var(--dark-color);
+}
 .btn-outline-info {
   border-color: var(--info-color);
   color: var(--info-color);
+}
+.btn-outline-info:hover {
+  background-color: var(--info-color);
+  color: var(--light-color);
 }
 .btn-outline-success {
   border-color: var(--success-color);
   color: var(--success-color);
 }
-
+.btn-outline-success:hover {
+  background-color: var(--success-color);
+  color: var(--light-color);
+}
 .btn-outline-dark {
   border-color: var(--dark-color);
   color: var(--dark-color);
 }
+.btn-outline-dark:hover {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
 .btn-outline-grey {
   border-color: var(--grey-color);
   color: var(--grey-color);
+}
+.btn-outline-grey:hover {
+  background-color: var(--grey-color);
+  color: var(--light-color);
 }
 .btn-round,
 .btn-round-lg,
