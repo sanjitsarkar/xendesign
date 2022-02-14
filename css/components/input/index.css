@@ -1,24 +1,46 @@
 @import url("../slider/index.css");
-input,
-textarea {
-  display: inline-block;
-  border: 0;
-  padding: 0.6em 0.7em;
-  border-radius: 0.2rem;
-  background-color: var(--dark-color-8);
 
+.input {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 0.2rem;
+  padding: 0.6em 0.7em;
+  background-color: transparent;
   outline: none;
-  color: var(--light-color);
-  border: 1px solid var(--dark-color-8);
   font-size: var(--font-size);
   transition: all 0.3s ease-in-out;
 }
-input:hover,
-textarea:hover {
+.input-box {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+.input-box .input {
+  display: inline-block;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.input:hover {
   border: 1px solid var(--primary-color);
 }
-input:focus,
-textarea:focus {
+.input:focus {
+  border: 1px solid var(--secondary-color);
+}
+.input-box .input:hover {
+  border: none;
+}
+.input-box .input:focus {
+  border: none;
+}
+
+.input-box ~ .input:hover {
+  border: 1px solid var(--primary-color);
+}
+.input-box ~ .input:focus {
   border: 1px solid var(--secondary-color);
 }
 .input-primary-light {
@@ -33,18 +55,36 @@ textarea:focus {
   background-color: var(--tertiary-color-8);
   color: var(--dark-color);
 }
-.input-error::placeholder,
-.input-success::placeholder {
-  color: var(--light-color-4);
+
+.input-success::placeholder,
+.input-success .input::placeholder {
+  color: var(--light-color-3);
 }
-.input-dark {
-  background-color: var(--dark-color-8);
+.input-error::placeholder,
+.input-error .input::placeholder {
+  color: var(--light-color-2);
+}
+
+.input-light {
+  background-color: var(--dark-color-9);
+  color: var(--light-color);
+}
+.input-light i {
+  color: var(--dark-color-4);
+}
+.input-light input {
   color: var(--dark-color);
 }
-.input-light {
+.input-dark input {
+  color: var(--light-color);
+}
+.input-dark {
   background-color: var(--light-color-8);
 
   color: var(--dark-color);
+}
+.input-dark i {
+  color: var(--light-color-4);
 }
 .input-success {
   background-color: var(--success-color);
@@ -57,7 +97,8 @@ textarea:focus {
 .input-warning {
   background-color: var(--warning-color);
 }
-.input-warning::placeholder {
+.input-warning::placeholder,
+.input-warning .input::placeholder {
   color: var(--dark-color-4);
 }
 
@@ -68,14 +109,12 @@ textarea:focus {
   height: 1.5rem;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The switch-slider */
 .switch-slider {
   position: absolute;
   cursor: pointer;
@@ -94,8 +133,8 @@ textarea:focus {
   content: "";
   height: 1.3rem;
   width: 1.3rem;
-  left: 0.15rem;
-  bottom: 0.15rem;
+  left: 0.1rem;
+  bottom: 0.1rem;
   background-color: var(--light-color);
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -162,7 +201,6 @@ input:checked + .switch-slider:before {
   display: none;
 }
 
-/* Show the checkmark when checked */
 .checkbox-container input:checked ~ .checkmark:after {
   display: block;
 }
