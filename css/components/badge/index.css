@@ -1,12 +1,5 @@
 .badge-holder {
-  cursor: pointer;
   position: relative;
-  transform: scale(1);
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.badge-holder:hover {
-  cursor: pointer;
-  transform: scale(1.1);
 }
 .badge {
   right: -5%;
