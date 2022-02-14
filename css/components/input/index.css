@@ -161,7 +161,6 @@ input:checked + .switch-slider:before {
   padding-left: 2rem;
   cursor: pointer;
   font-size: 1rem;
-  color: var(--dark-color);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -207,7 +206,7 @@ input:checked + .switch-slider:before {
 
 .checkbox-container .checkmark:after {
   left: 0.5rem;
-  top: 0.3rem;
+  top: 0.35rem;
   width: 0.4rem;
   height: 0.7rem;
   border: solid var(--light-color);
@@ -224,7 +223,6 @@ input:checked + .switch-slider:before {
   height: 1.5rem;
   width: 1.5rem;
   background-color: var(--grey-color-6);
-
   border-radius: 50%;
 }
 
@@ -253,5 +251,5 @@ input:checked + .switch-slider:before {
   height: 0.5rem;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: va(--light-color);
+  background: var(--light-color);
 }
