@@ -172,7 +172,11 @@ input[type="submit"] {
 .btn-round-md {
   width: 2.5rem;
 }
-.btn-float-right {
+.btn-float-right,
+.btn-float-right-md,
+.btn-float-right-sm,
+.btn-float-right-lg,
+.btn-float-right-xl {
   aspect-ratio: 1/1;
   border-radius: 50%;
   position: fixed;
@@ -180,11 +184,64 @@ input[type="submit"] {
   right: 1rem;
   z-index: 99;
 }
-.btn-float-left {
+.btn-float-left,
+.btn-float-left-md,
+.btn-float-left-sm,
+.btn-float-left-lg,
+.btn-float-left-xl {
   aspect-ratio: 1/1;
   border-radius: 50%;
   position: fixed;
   bottom: 1rem;
   left: 1rem;
   z-index: 99;
+}
+.btn-float-right-sm,
+.btn-float-left-sm {
+  transform: scale(1);
+}
+
+.btn-float-right-md,
+.btn-float-left-md,
+.btn-float-right,
+.btn-float-left {
+  transform: scale(1.2);
+}
+
+.btn-float-right-md:hover,
+.btn-float-left-md:hover,
+.btn-float-right:hover,
+.btn-float-left:hover {
+  transform: scale(1.3);
+}
+.btn-float-right-md:active,
+.btn-float-left-md:active,
+.btn-float-right:active,
+.btn-float-left:active {
+  transform: scale(1.1);
+}
+.btn-float-right-lg,
+.btn-float-left-lg {
+  transform: scale(1.4);
+}
+.btn-float-left-lg:hover,
+.btn-float-right-lg:hover {
+  transform: scale(1.5);
+}
+.btn-float-left-lg:active,
+.btn-float-right-lg:active {
+  transform: scale(1.3);
+}
+
+.btn-float-left-xl,
+.btn-float-right-xl {
+  transform: scale(1.6);
+}
+.btn-float-left-xl:hover,
+.btn-float-right-xl:hover {
+  transform: scale(1.7);
+}
+.btn-float-left-xl:active,
+.btn-float-right-xl:active {
+  transform: scale(1.5);
 }
