@@ -8,12 +8,38 @@
   box-shadow: var(--bx-sh-2);
   border-radius: var(--br-radius);
   color: var(--dark-color);
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  max-width: 20rem;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card-md {
+  max-width: 20rem;
+}
+.card-sm {
+  max-width: 15rem;
+}
+.card-lg {
+  max-width: 25rem;
+}
+
+.card-dark {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+.card-black {
+  background-color: var(--black-color);
+  color: var(--light-color);
+}
+.card-light {
+  background-color: var(--light-color);
+  color: var(--dark-color);
 }
 .card-horizontal {
   flex-direction: row;
   position: relative;
   gap: 0.5rem;
+  max-width: fit-content;
 }
 .card-horizontal .card-bottom {
   max-width: fit-content;
@@ -95,7 +121,6 @@
 .card-title {
   font-weight: 600;
   font-size: 1.2rem;
-  color: var(--dark-color);
   opacity: 0.9;
 }
 .card-body .card-description {
