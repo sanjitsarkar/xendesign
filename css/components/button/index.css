@@ -5,35 +5,60 @@ input[type="submit"] {
   border: none;
   padding: 0.5rem 0.6rem;
   border-radius: 0.3rem;
-  background-color: var(--primary-color);
-  color: var(--light-color);
 }
 
-.btn {
+.btn,
+.btn a {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
   border: 0;
-
-  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  padding: 0.5rem 0.6rem;
+  border-radius: 0.3rem;
   box-shadow: var(--bx-sh-1);
   transform: scale(1);
   font-size: 0.9rem;
   transition: all 0.1s ease-in-out;
 }
-.btn:hover {
-  box-shadow: var(--bx-sh-2);
+.btn-link {
+  color: var(--primary-color);
+  position: relative;
+}
+
+.btn-link::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  background-color: var(--primary-color);
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover,
+.btn-link:hover {
   transform: scale(1.05);
   opacity: 0.9;
 }
-.btn:active {
-  box-shadow: var(--bx-sh-3);
+.btn:active,
+.btn-link:active {
   opacity: 0.7;
-
   transform: scale(0.95);
 }
+.btn:hover {
+  box-shadow: var(--bx-sh-2);
+}
+.btn:active {
+  box-shadow: var(--bx-sh-3);
+}
+
 .btn-disabled {
   background-color: var(--grey-color-7);
+  color: var(--grey-color-4);
 }
 
 .btn-primary {
@@ -131,22 +156,35 @@ input[type="submit"] {
 .btn-round-md {
   display: grid;
   place-content: center;
+  aspect-ratio: 1/1;
   border-radius: 50%;
 }
 .btn-round {
   width: 3rem;
-  height: 3rem;
 }
 .btn-round-lg {
   width: 4rem;
-  height: 4rem;
 }
 .btn-round-sm {
   font-size: smaller;
   width: 2rem;
-  height: 2rem;
 }
 .btn-round-md {
   width: 2.5rem;
-  height: 2.5rem;
+}
+.btn-float-right {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 99;
+}
+.btn-float-left {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 99;
 }

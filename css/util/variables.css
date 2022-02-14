@@ -1,5 +1,4 @@
 :root {
-<<<<<<< HEAD
   --primary-color: hsl(189, 96%, 37%);
   --secondary-color: hsl(152, 93%, 40%);
   --tertiary-color: hsl(273, 100%, 50%);
@@ -43,7 +42,6 @@
   --bx-sh-grey-1: 0px 0px 0.5rem hsl(297, 100%, 50%, 0.1); /* box-shadow */
   --bx-sh-grey-2: 0px 0px 0.7rem hsl(297, 100%, 50%, 0.2); /* box-shadow */
   --bx-sh-grey-3: 0px 0px 0.9rem hsl(297, 100%, 50%, 0.3); /* box-shadow */
-=======
   --primary-color-9: hsla(189, 96%, 37%, 0.1);
   --primary-color-8: hsla(189, 96%, 37%, 0.2);
   --primary-color-7: hsla(189, 96%, 37%, 0.3);
@@ -188,11 +186,6 @@
   --bx-sh-grey-1: 0px 0px 0.5rem var(--grey-color-9); /* box-shadow */
   --bx-sh-grey-2: 0px 0px 0.7rem var(--grey-color-8); /* box-shadow */
   --bx-sh-grey-3: 0px 0px 0.9rem var(--grey-color-7); /* box-shadow */
-<<<<<<< HEAD
-
->>>>>>> feature/utils
-=======
->>>>>>> feature/badge
   --font-size: 1rem;
   --pd: 0.5rem;
   --m: 0.5rem;
