@@ -52,6 +52,9 @@
   background-color: var(--primary-color);
   color: var(--light-color);
 }
+.badge-status {
+  background-color: var(--grey-color);
+}
 .badge-primary {
   background-color: var(--primary-color);
 }
@@ -63,16 +66,19 @@
   background-color: var(--tertiary-color);
   color: var(--light-color);
 }
-.badge-error {
+.badge-error,
+.badge-status .dnd {
   background-color: var(--error-color);
   color: var(--light-color);
 }
-.badge-success {
+.badge-success,
+.badge-status .online {
   background-color: var(--success-color);
   color: var(--light-color);
 }
 
-.badge-warning {
+.badge-warning,
+.badge-status .idle {
   background-color: var(--warning-color);
   color: var(--dark-color);
 }
