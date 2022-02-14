@@ -1,7 +1,5 @@
 .modal {
-  /* display: none;  */
   transform: scale(0);
-
   position: fixed;
   z-index: 999;
   left: 0;
@@ -24,38 +22,11 @@
   width: 80%;
   position: relative;
 }
-
 .modal-open {
   filter: blur(0px);
-
   transform: scale(1);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
-/* .slide-down{
-    animation: slide-down linear .3s 1;
-    animation-fill-mode: both;
-  }
-  .slide-up{
-    animation:slide-up 1s 1 both;
-
-  }
-  @keyframes slide-down {
-      from{
-        transform:translateY(0%);
-
-      }
-      to{
-        transform:translateY(10%);
-
-
-      }
-  }
-  @keyframes slide-up {
-    to{
-        top:10% auto;
-    }
-} */
 .close {
   box-shadow: var(--bx-sh-3);
   border-radius: 50%;

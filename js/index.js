@@ -10,7 +10,6 @@ function closeAlert(elem) {
 const slider = document.querySelector("#slider");
 const output = document.querySelector("#slider-value");
 output.textContent = slider.value;
-
 slider.oninput = function () {
     output.textContent = this.value;
 }
@@ -54,9 +53,7 @@ const addRating = (n) => {
     for (var i = 0; i <= n; i++) {
         rating[i].classList.add('rating-active')
     }
-
 }
-
 rating[0].addEventListener("click", () => {
     addRating(0);
 })
