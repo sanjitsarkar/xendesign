@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="../components/css/style.css">
+    <link rel="stylesheet" href="../components/css/prism.css">
+    <script src="../js/index.js" defer></script>
+    <script src="../components/js/index.js" defer></script>
+    <script src="../components/js/prism.js" defer></script>
+    <script src="../components/js/clipboard.min.js" defer></script>
+    <script src="../components/js/copyToClipboard.js" defer></script>
+    <title>XenDesign</title>
+</head>
+
+<body class="bg-dark  overflow-x-hidden text-light">
+    <header
+        class="align-left p-3 pt-2 pb-2 t-0 l-0 fixed bg-dark w-full bx-sh-secondary-3 row justify-between items-center">
+        <div class="row flex-gap-1 items-center">
+            <button class="menu btn-round-md bg-secondary ml-2">
+                <fa class="fa fa-bars"></fa>
+            </button>
+            <a href="../index.html" class="text-xl">XenDesign</a>
+        </div>
+        <a href="https://github.com/sanjitsarkar/xendesign" target="_blank" class="text-xl"><i
+                class="fab fa-github fa-2x"></i>
+        </a>
+
+    </header>
+    <main class="container h-full w-full row">
+        <aside class="w-1-6 sidebar  overflow-y-auto ">
+            <h1 class="sidebar-title font-bold text-xl pb-1 pl-3">
+                Get Started
+            </h1>
+            <ul class="list top-list p-1" id="top-list">
+
+                <li>Installation</li>
+                <li>Color</li>
+                <li>Typography</li>
+            </ul>
+            <h1 class="sidebar-title font-bold text-xl pb-1 pl-0">
+                Components
+            </h1>
+            <ul class="list bottom-list p-1" id="bottom-list">
+                <li>Alert</li>
+                <li>Avatar</li>
+                <li>Badge</button></li>
+                <li>Button</li>
+                <li>Card</li>
+                <li>Image</li>
+                <li>Input</li>
+                <li>Modal</li>
+                <li>Toast</li>
+                <li>Rating</li>
+                <li>Slider</li>
+                <li>Grid</li>
+                <li>Navigation</li>
+            </ul>
+        </aside>
+
+
+
+        <main class="component-wrapper">
+            <h1 class="text-2xl  mb-3 text-secondary">Toast</h1>
+            <h3 class="text-xl text-light mb-2  font-medium">Normal Toast</h3>
+            <section class=" component-section row flex-gap-1 mb-4">
+                <div class="toast-container" id="toast">
+                    Hello, I'm a toast...
+                </div>
+                <button class="btn btn-light" id="show-toast" onclick="showToast('toast',1000);">Show Toast</button>
+            </section>
+            <pre><code class="language-html"><xmp><div class="toast-container" id="toast">
+            Hello, I'm a toast...
+        </div>
+        <button class="btn btn-light" id="show-toast" onclick="showToast('toast',1000);">Show Toast</button></xmp></code></pre>
+            <!-- <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%287%2C197%2C108%2C1%29&t=one-dark&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast-container%2522%2520id%253D%2522toast%2522%253EHello%252C%2520I%27m%2520a%2520toast...%253C%252Fdiv%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-light%2522%2520id%253D%2522show-toast%2522%2520onclick%253D%2522showToast%28%27toast%27%252C1000%29%253B%2522%253EShow%2520Toast%253C%252Fbutton%253E"
+                style="min-height: 40vh; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe> -->
+        </main>
+</body>
+
+</html>

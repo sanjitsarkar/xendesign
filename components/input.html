@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="../components/css/style.css">
+    <link rel="stylesheet" href="../components/css/prism.css">
+    <script src="../js/index.js" defer></script>
+    <script src="../components/js/index.js" defer></script>
+    <script src="../components/js/prism.js" defer></script>
+    <script src="../components/js/clipboard.min.js" defer></script>
+    <script src="../components/js/copyToClipboard.js" defer></script>
+    <title>XenDesign</title>
+</head>
+
+<body class="bg-dark  overflow-x-hidden text-light">
+    <header
+        class="align-left p-3 pt-2 pb-2 t-0 l-0 fixed bg-dark w-full bx-sh-secondary-3 row justify-between items-center">
+        <div class="row flex-gap-1 items-center">
+            <button class="menu btn-round-md bg-secondary ml-2">
+                <fa class="fa fa-bars"></fa>
+            </button>
+            <a href="../index.html" class="text-xl">XenDesign</a>
+        </div>
+        <a href="https://github.com/sanjitsarkar/xendesign" target="_blank" class="text-xl"><i
+                class="fab fa-github fa-2x"></i>
+        </a>
+
+    </header>
+    <main class="container h-full w-full row">
+        <aside class="w-1-6 sidebar  overflow-y-auto ">
+            <h1 class="sidebar-title font-bold text-xl pb-1 pl-3">
+                Get Started
+            </h1>
+            <ul class="list top-list p-1" id="top-list">
+
+                <li>Installation</li>
+                <li>Color</li>
+                <li>Typography</li>
+            </ul>
+            <h1 class="sidebar-title font-bold text-xl pb-1 pl-0">
+                Components
+            </h1>
+            <ul class="list bottom-list p-1" id="bottom-list">
+                <li>Alert</li>
+                <li>Avatar</li>
+                <li>Badge</button></li>
+                <li>Button</li>
+                <li>Card</li>
+                <li>Image</li>
+                <li>Input</li>
+                <li>Modal</li>
+                <li>Toast</li>
+                <li>Rating</li>
+                <li>Slider</li>
+                <li>Grid</li>
+                <li>Navigation</li>
+            </ul>
+        </aside>
+
+        <main class="component-wrapper">
+            <h1 class="text-2xl  mb-3 text-secondary">Input</h1>
+            <h3 class="text-xl text-light mb-2 mt-5 font-medium">Input Fields with Error Styles</h3>
+            <section class=" component-section row flex-gap-1 mb-4">
+                <input type="text" placeholder="Enter your name" class="input">
+                <input type="text" placeholder="Enter your name" class="input input-dark">
+                <input type="text" placeholder="Enter your name" class="input input-success">
+                <input type="text" placeholder="Enter your name" class="input input-warning">
+                <input type="text" placeholder="Enter your name" class="input input-error">
+            </section>
+            <pre><code class="language-html"><xmp><input type="text" placeholder="Enter your name" class="input">
+<input type="text" placeholder="Enter your name" class="input input-dark">
+<input type="text" placeholder="Enter your name" class="input input-success">
+<input type="text" placeholder="Enter your name" class="input input-warning">
+<input type="text" placeholder="Enter your name" class="input input-error"></xmp></code></pre>
+            <!-- <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%287%2C197%2C108%2C1%29&t=one-dark&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520your%2520name%2522%2520class%253D%2522input%2522%253E%250A%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520your%2520name%2522%2520class%253D%2522input%2520input-dark%2522%253E%250A%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520your%2520name%2522%2520class%253D%2522input%2520input-success%2522%253E%250A%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520your%2520name%2522%2520class%253D%2522input%2520input-warning%2522%253E%250A%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520your%2520name%2522%2520class%253D%2522input%2520input-error%2522%253E"
+                    style=" min-height: 45.5vh; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe> -->
+            <h3 class="text-xl text-light mt-5 mb-2  font-medium ">Input Fields with Icon</h3>
+            <section class=" component-section row flex-gap-1 mb-4">
+                <div class="input-box input input-dark">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Enter your name" class="input">
+                </div>
+                <div class="input-box input input-dark">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Enter your password" class="input">
+                    <i class="fa fa-eye"></i>
+                </div>
+            </section>
+            <pre><code class="language-html"><xmp><div class="input-box input input-dark">
+    <i class="fa fa-search"></i>
+    <input type="text" placeholder="Enter your name" class="input">
+</div>
+<div class="input-box input input-dark">
+    <i class="fa fa-lock"></i>
+    <input type="password" placeholder="Enter your password" class="input">
+    <i class="fa fa-eye"></i>
+</div></xmp></code></pre>
+            <!-- <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%287%2C197%2C108%2C1%29&t=one-dark&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-box%2520input%2520input-dark%2522%253E%250A%253Ci%2520class%253D%2522fa%2520fa-search%2522%253E%253C%252Fi%253E%250A%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520your%2520name%2522%2520class%253D%2522input%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522input-box%2520input%2520input-dark%2522%253E%250A%253Ci%2520class%253D%2522fa%2520fa-lock%2522%253E%253C%252Fi%253E%250A%253Cinput%2520type%253D%2522password%2522%2520placeholder%253D%2522Enter%2520your%2520password%2522%2520class%253D%2522input%2522%253E%250A%253Ci%2520class%253D%2522fa%2520fa-eye%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
+                    style=" min-height: 53vh; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe> -->
+            <h3 class="text-xl text-light mt-5 mb-2  font-medium ">Switch, Checkbox and Radiobox</h3>
+            <section class=" component-section row flex-gap-1 mb-4">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="switch-slider"></span>
+                </label>
+                <label class="checkbox-container">One
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Two
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">Male
+                    <input type="radio" name="radio" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">Female
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+            </section>
+            <pre><code class="language-html"><xmp><label class="switch">
+    <input type="checkbox">
+    <span class="switch-slider"></span>
+</label>
+<label class="checkbox-container">One
+    <input type="checkbox" checked="checked">
+    <span class="checkmark"></span>
+</label>
+<label class="checkbox-container">Two
+    <input type="checkbox">
+    <span class="checkmark"></span>
+</label>
+<label class="radio-container">Male
+    <input type="radio" name="radio" checked>
+    <span class="checkmark"></span>
+</label>
+<label class="radio-container">Female
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+</label></xmp></code></pre>
+            <!-- <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%287%2C197%2C108%2C1%29&t=one-dark&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clabel%2520class%253D%2522switch%2522%253E%250A%253Cinput%2520type%253D%2522checkbox%2522%253E%250A%253Cspan%2520class%253D%2522switch-slider%2522%253E%253C%252Fspan%253E%250A%2520%2520%253C%252Flabel%253E%250A%253Clabel%2520class%253D%2522checkbox-container%2522%253EOne%250A%253Cinput%2520type%253D%2522checkbox%2522%2520checked%253D%2522checked%2522%253E%250A%253Cspan%2520class%253D%2522checkmark%2522%253E%253C%252Fspan%253E%250A%253C%252Flabel%253E%250A%253Clabel%2520class%253D%2522checkbox-container%2522%253ETwo%250A%253Cinput%2520type%253D%2522checkbox%2522%253E%250A%253Cspan%2520class%253D%2522checkmark%2522%253E%253C%252Fspan%253E%250A%253C%252Flabel%253E%250A%253Clabel%2520class%253D%2522radio-container%2522%253EMale%250A%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522radio%2522%253E%250A%253Cspan%2520class%253D%2522checkmark%2522%253E%253C%252Fspan%253E%250A%253C%252Flabel%253E%250A%253Clabel%2520class%253D%2522radio-container%2522%253EFemale%250A%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522radio%2522%253E%250A%253Cspan%2520class%253D%2522checkmark%2522%253E%253C%252Fspan%253E%250A%253C%252Flabel%253E"
+                    style=" min-height: 100vh; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe> -->
+        </main>
+    </main>
+</body>
+
+</html>

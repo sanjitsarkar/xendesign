@@ -1,12 +1,7 @@
-.rating {
-  color: var(--grey-color-5);
-  cursor: pointer;
-}
-.rating-dark {
+.rating-bar > * {
   color: var(--light-color-6);
   cursor: pointer;
 }
-
 .rating-active {
   color: var(--warning-color);
 }

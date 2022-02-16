@@ -105,6 +105,8 @@ input[type="submit"] {
 }
 .btn-outline-primary,
 .btn-outline-dark,
+.btn-outline-light,
+.btn-outline-grey,
 .btn-outline-error,
 .btn-outline-info,
 .btn-outline-success,
@@ -113,6 +115,19 @@ input[type="submit"] {
 .btn-outline-tertiary,
 .btn-outline-primary {
   border: 0.5px solid;
+}
+.btn-outline-primary:hover,
+.btn-outline-dark:hover,
+.btn-outline-light:hover,
+.btn-outline-grey:hover,
+.btn-outline-error:hover,
+.btn-outline-info:hover,
+.btn-outline-success:hover,
+.btn-outline-warning:hover,
+.btn-outline-secondary:hover,
+.btn-outline-tertiary:hover,
+.btn-outline-primary:hover {
+  opacity: 1;
 }
 .btn-outline-primary {
   border-color: var(--primary-color);

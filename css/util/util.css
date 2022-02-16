@@ -775,3 +775,7 @@
 .bx-sh-none {
   box-shadow: none;
 }
+.center {
+  display: grid;
+  place-items: center;
+}

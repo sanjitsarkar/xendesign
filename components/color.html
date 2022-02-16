@@ -2,415 +2,262 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <script src="js/index.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="../components/css/style.css">
+    <link rel="stylesheet" href="../components/css/prism.css">
+    <script src="../js/index.js" defer></script>
+    <script src="../components/js/index.js" defer></script>
+    <script src="../components/js/prism.js" defer></script>
+    <script src="../components/js/clipboard.min.js" defer></script>
+    <script src="../components/js/copyToClipboard.js" defer></script>
     <title>XenDesign</title>
 </head>
 
-<body class="m-4 bg-light col flex-gap-1">
-    <section class="alert-section row flex-gap-1 mt-1 align-center">
-        <div class="alert">
-            lorem ipsum dolor sit amet
-            <span class="alert-close" onclick="closeAlert(this)">&times;</span>
+<body class="bg-dark  overflow-x-hidden text-light">
+    <header
+        class="align-left p-3 pt-2 pb-2 t-0 l-0 fixed bg-dark w-full bx-sh-secondary-3 row justify-between items-center">
+        <div class="row flex-gap-1 items-center">
+            <button class="menu btn-round-md bg-secondary ml-2">
+                <fa class="fa fa-bars"></fa>
+            </button>
+            <a href="../index.html" class="text-xl">XenDesign</a>
         </div>
-        <div class="alert alert-warning">
-            <svg></svg>
-            lorem ipsum dolor sit amet
-            <span class="alert-close" onclick="closeAlert(this)">&times;</span>
-        </div>
-        <div class="alert alert-success">
-            <svg></svg>
+        <a href="https://github.com/sanjitsarkar/xendesign" target="_blank" class="text-xl"><i
+                class="fab fa-github fa-2x"></i>
+        </a>
 
-            lorem ipsum dolor sit amet
-            <span class="alert-close" onclick="closeAlert(this)">&times;</span>
-        </div>
-        <div class="alert alert-error">
-            <svg></svg>
+    </header>
+    <main class="container h-full w-full row">
+        <aside class="w-1-6 sidebar  overflow-y-auto ">
+            <h1 class="sidebar-title font-bold text-xl pb-1 pl-3">
+                Get Started
+            </h1>
+            <ul class="list top-list p-1" id="top-list">
 
-            lorem ipsum dolor sit amet
-            <span class="alert-close" onclick="closeAlert(this)">&times;</span>
-        </div>
-        <div class="alert alert-info">
-            <svg></svg>
+                <li>Installation</li>
+                <li>Color</li>
+                <li>Typography</li>
+            </ul>
+            <h1 class="sidebar-title font-bold text-xl pb-1 pl-0">
+                Components
+            </h1>
+            <ul class="list bottom-list p-1" id="bottom-list">
+                <li>Alert</li>
+                <li>Avatar</li>
+                <li>Badge</button></li>
+                <li>Button</li>
+                <li>Card</li>
+                <li>Image</li>
+                <li>Input</li>
+                <li>Modal</li>
+                <li>Toast</li>
+                <li>Rating</li>
+                <li>Slider</li>
+                <li>Grid</li>
+                <li>Navigation</li>
+            </ul>
+        </aside>
 
-            lorem ipsum dolor sit amet
-            <span class="alert-close" onclick="closeAlert(this)">&times;</span>
-        </div>
-    </section>
-
-    <section class="avatar-section row flex-gap-1 mt-1 align-center">
-        <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
-            alt="Cool Profile" class="avatar avatar-xsm" />
-        <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
-            alt="Cool Profile" class="avatar avatar-sm" />
-        <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
-            alt="Cool Profile" class="avatar avatar-md" />
-        <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
-            alt="Cool Profile" class="avatar avatar-lg" />
-        <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
-            alt="Cool Profile" class="avatar avatar-xl" />
-    </section>
-
-    <section class="badge-section row flex-gap-1 mt-1 align-center">
-        <div class="badge-holder">
-            <i class="fa fa-user grid place-content-center w-12 h-12 bg-dark p-2 br-full text-light"></i>
-            <span class="badge badge-success">12</span>
-        </div>
-        <div class="badge-holder">
-            <i class="fa fa-message grid place-content-center w-12 h-12 bg-dark p-2 br-full text-light"></i>
-            <span class="badge badge-info">102</span>
-        </div>
-        <div class="avatar-badge-container">
-            <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
-                alt="Cool Profile" class="avatar avatar-xl" />
-            <span class="avatar-badge badge-primary">15</span>
-        </div>
-        <div class="avatar-badge-container">
-            <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
-                alt="Cool Profile" class="avatar avatar-xl" />
-            <span class="avatar-badge badge-error"></span>
-        </div>
-        <div class="avatar-badge-container">
-            <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
-                alt="Cool Profile" class="avatar avatar-xl" />
-            <span class="avatar-badge badge-warning"></span>
-        </div>
-        <div class="avatar-badge-container">
-            <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
-                alt="Cool Profile" class="avatar avatar-xl" />
-            <span class="avatar-badge badge-info"></span>
-        </div>
-        <div class="avatar-badge-container">
-            <img src="https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Profile-Picture.jpg"
-                alt="Cool Profile" class="avatar avatar-xl" />
-            <span class="avatar-badge badge-secondary"></span>
-        </div>
-    </section>
-    <section class="button-section row flex-gap-1 mt-1 align-center items-center">
-        <button class="btn btn-disabled">Disabled</button>
-        <button class="btn btn-primary">Primary</button>
-        <button class="btn btn-secondary">Secondary</button>
-        <button class="btn btn-tertiary">Tertiary</button>
-        <button class="btn btn-success">Success</button>
-        <button class="btn btn-warning">Warning</button>
-        <button class="btn btn-error">Error</button>
-        <button class="btn btn-info">Info</button>
-        <button class="btn btn-light">Light</button>
-        <button class="btn btn-dark">Dark</button>
-        <button class="btn btn-grey">Grey</button>
-        <button class="btn btn-outline-primary">Primary Outlined</button>
-        <button class="btn btn-outline-secondary">Secondary Outlined</button>
-        <button class="btn btn-outline-tertiary">Tertiary Outlined</button>
-        <button class="btn btn-outline-success">Success Outlined</button>
-        <button class="btn btn-outline-warning">Warning Outlined</button>
-        <button class="btn btn-outline-error">Error Outlined</button>
-        <button class="btn btn-outline-info">Info Outlined</button>
-        <button class="btn btn-outline-dark">Dark Outlined</button>
-        <button class="btn btn-outline-grey">Grey Outlined</button>
-        <button class="btn btn-round btn-primary">
-            <i class="fa fa-shopping-cart"></i>
-        </button>
-        <button class="btn btn-round-md btn-secondary">
-            <i class="fa fa-user"></i>
-            <span class="badge badge-error">12</span>
-        </button>
-        <a href="" class="btn-link">Link Button</a>
-        <button class="btn btn-float-right bg-pink text-light text-light">
-            <i class="fa fa-heart"></i>
-        </button>
-        <button class="btn btn-float-left-lg btn-dark">
-            <i class="fa fa-add"></i>
-        </button>
-    </section>
-    <section class="section-card row flex-gap-1 mt-1 align-center">
-        <div class="card card-lg">
-            <div class="card-header">
-                <div class="card-badge bg-primary">
-                    Trending
-                </div>
-                <img src="https://s.yimg.com/os/creatr-uploaded-images/2021-09/de2e6bc0-1a9b-11ec-bef7-5c6aa1cb549c"
-                    alt="Iphone 13S">
-            </div>
-            <div class="card-bottom">
-                <div class="card-body">
-                    <div class="card-title">Iphone 13S</div>
-                    <p class="card-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur. Obcaecati unde
-                        ipsum nihil
-                        sapiente quos! Doloribus, officia dignissimos!
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <div class="row items-center flex-gap-05">
-                        <h4 class="o-70 text-600">Price</h4>
-                        <h4 class="text-base text-md-bold">₹10200000</h4>
-                    </div>
-                    <div class="card-actions">
-                        <button class="btn btn-round-md btn-dark">
-                            <i class="fa fa-shopping-cart"></i>
-                        </button>
-                        <button class=" btn-round-md bg-pink text-light">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <button class="btn btn-round-md btn-secondary">
-                            <i class="fa fa-share"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card card-md">
-            <div class="card-header">
-                <img src="https://images.samsung.com/uk/smartphones/galaxy-s20/images/kv/galaxy-s20_highlights_kv_00.jpg"
-                    alt="Samsung X3S" class="w-full">
-            </div>
-            <div class="card-bottom">
-                <div class="card-body">
-                    <div class="card-title">Samsung X3S</div>
-                    <p class="card-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur. Obcaecati unde
-                        ipsum nihil
-                        sapiente quos! Doloribus, officia dignissimos!
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <div class="row items-center flex-gap-05">
-                        <h4 class="o-70 text-600">Price</h4>
-                        <h4 class="text-base text-md-bold">₹1000200000</h4>
-                    </div>
-                    <div class="card-actions">
-                        <button class="btn btn-round-md btn-dark">
-                            <i class="fa fa-shopping-cart"></i>
-                        </button>
-                        <button class=" btn-round-md bg-pink text-light">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <button class="btn btn-round-md btn-secondary">
-                            <i class="fa fa-share"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-badge bg-dark">
-                    Best Selling</div>
-                <img src="https://oasis.opstatics.com/content/dam/oasis/page/2021/operation/1227/store/pc/01-Featured-2.jpg"
-                    alt="One Plus 10" class="h-40 w-full">
-            </div>
-            <div class="card-bottom">
-                <div class="card-body">
-                    <div class="card-title">One Plus 10</div>
-                    <p class="card-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur. Obcaecati unde
-                        ipsum nihil
-                        sapiente quos! Doloribus, officia dignissimos!
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <div class="row items-center flex-gap-05">
-                        <h4 class="o-70 text-600">Price</h4>
-                        <h4 class="text-base text-md-bold">₹1000200000</h4>
-                    </div>
-                    <div class="card-actions">
-                        <button class="btn btn-round-md btn-dark">
-                            <i class="fa fa-shopping-cart"></i>
-                        </button>
-                        <button class=" btn-round-md bg-pink text-light">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <button class="btn btn-round-md btn-secondary">
-                            <i class="fa fa-share"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-text-overlay bg-dark-2 text-light text-2xl">
-                    Best Selling</div>
-                <img src="https://oasis.opstatics.com/content/dam/oasis/page/2021/operation/1227/store/pc/01-Featured-2.jpg"
-                    alt="One Plus 10" class="h-40 w-full">
-            </div>
-            <div class="card-bottom">
-                <div class="card-body">
-                    <div class="card-title">One Plus 10</div>
-                    <p class="card-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur. Obcaecati unde
-                        ipsum nihil
-                        sapiente quos! Doloribus, officia dignissimos!
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <div class="row items-center flex-gap-05">
-                        <h4 class="o-70 text-600">Price</h4>
-                        <h4 class="text-base text-md-bold">₹1000200000</h4>
-                    </div>
-                    <div class="card-actions">
-                        <button class="btn btn-round-md btn-dark">
-                            <i class="fa fa-shopping-cart"></i>
-                        </button>
-                        <button class=" btn-round-md bg-pink text-light">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <button class="btn btn-round-md btn-secondary">
-                            <i class="fa fa-share"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card card-horizontal">
-            <div class="card-header">
-                <div class="card-badge bg-tertiary">
-                    Most Rated</div>
-                <img src="https://i01.appmifile.com/webfile/globalimg/dongxuechun/Lark20211119-195301.jpg?width=398&height=320"
-                    alt="Poco F10">
-            </div>
-            <div class="card-bottom">
-                <div class="card-body">
-                    <div class="card-title">Poco F10</div>
-                    <p class="card-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur. Obcaecati unde
-                        ipsum nihil
-                        sapiente quos! Doloribus, officia dignissimos!
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <div class="row items-center flex-gap-05">
-                        <h4 class="o-70 text-600">Price</h4>
-                        <h4 class="text-base text-md-bold">₹1000200000</h4>
-                    </div>
-                    <div class="card-actions">
-                        <button class="btn btn-round-md btn-dark">
-                            <i class="fa fa-shopping-cart"></i>
-                        </button>
-                        <button class=" btn-round-md bg-pink text-light">
-                            <i class="fa fa-heart"></i>
-                        </button>
-                        <button class="btn btn-round-md btn-secondary">
-                            <i class="fa fa-share"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card w-82 h-52 ">
-            <div class="card-text-overlay bg-black-2 w-full h-full text-3xl text-secondary  b-solid br-secondary">
-                Best Selling</div>
-            <img src="https://oasis.opstatics.com/content/dam/oasis/page/2021/operation/1227/store/pc/01-Featured-2.jpg"
-                alt="One Plus 10" class="h-full w-full">
-
-        </div>
-        <div class="card w-72 ">
-            <div class="card-body">
-                <h1 class="card-title">
-                    Text Only Card
-                </h1>
-                <p class="card-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repellat iusto explicabo omnis
-                    aliquam
-                    dignissimos aperiam consectetur aut quod in.
-                </p>
-            </div>
-            <div class="card-footer">
-                <div class="row items-center flex-gap-05">
-                    <h4 class="o-70 text-600">Price</h4>
-                    <h4 class="text-base text-md-bold">₹1000200000</h4>
-                </div>
-                <div class="card-actions">
-                    <button class="btn btn-round-md btn-dark">
-                        <i class="fa fa-shopping-cart"></i>
-                    </button>
-                    <button class=" btn-round-md bg-pink text-light">
-                        <i class="fa fa-heart"></i>
-                    </button>
-                    <button class="btn btn-round-md btn-secondary">
-                        <i class="fa fa-share"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="image-section row flex-gap-1 mt-1 align-center ">
-        <img src="https://images.unsplash.com/photo-1644325781022-3e1177d11bfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
-            alt="" srcset="" class="img w-72 h-72">
-        <img src="https://images.unsplash.com/photo-1644351032803-9c6f42458ea7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
-            alt="" srcset="" class="img img-rounded w-72 h-72">
-        <img src="https://images.unsplash.com/photo-1644365240979-da902297897f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
-            alt="" srcset="" class="img img-responsive br-lg  w-52">
-    </section>
-    <section class="input-section row flex-gap-1 mt-1 align-center ">
-        <input type="text" placeholder="Enter your name" class="input">
-        <input type="text" placeholder="Enter your name" class="input input-dark">
-        <input type="text" placeholder="Enter your name" class="input input-success">
-        <input type="text" placeholder="Enter your name" class="input input-warning">
-        <input type="text" placeholder="Enter your name" class="input input-error">
-        <div class="input-box input input-light">
-            <i class="fa fa-search"></i>
-            <input type="text" placeholder="Enter your name" class="input">
-
-        </div>
-        <div class="input-box input input-dark">
-            <i class="fa fa-search"></i>
-            <input type="text" placeholder="Enter your name" class="input">
-
-        </div>
-        <label class="switch">
-            <input type="checkbox">
-            <span class="switch-slider"></span>
-        </label>
-        <label class="checkbox-container">One
-            <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
-        </label>
-
-        <label class="checkbox-container">Two
-            <input type="checkbox">
-            <span class="checkmark"></span>
-        </label>
-        <label class="radio-container">Male
-            <input type="radio" name="radio">
-            <span class="checkmark"></span>
-        </label>
-        <label class="radio-container">Female
-            <input type="radio" name="radio">
-            <span class="checkmark"></span>
-        </label>
-        <div class="silder-contaier row flex-gap-1 items-center">
-            <input type="range" min="1" max="100" value="0" class="slider w-96" id="slider">
-            <div id="slider-value" class="slider-value"></div>
-        </div>
-    </section>
-    <section class="modal-section">
-        <button id="open-modal" class="btn btn-success">Open Modal</button>
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <span class="close" id="close">&times;</span>
-                <p>Write your modal content here</p>
-            </div>
-        </div>
-    </section>
-    <section class="section-toast">
-        <div class="toast-container" id="toast">
-            Hello, I'm a toast...
-        </div>
-        <button class="btn btn-dark" id="show-toast" onclick="showToast('toast',1000);">Show Toast</button>
-    </section>
-    <section class="section-rating">
-        <div class="rating-bar">
-            <span class="fa fa-star rating"></span>
-            <span class="fa fa-star rating"></span>
-            <span class="fa fa-star rating"></span>
-            <span class="fa fa-star rating"></span>
-            <span class="fa fa-star rating"></span>
-        </div>
-    </section>
+        <main class="component-wrapper">
+            <h1 class="text-2xl  mb-3 text-secondary">Color</h1>
+            <h3 class="text-xl text-light mb-2  font-medium">Background Colors</h3>
+            <section class="mb-4">
+                <div class="bg-container w-full h-5 bg-primary">Primary Color</div>
+                <div class="bg-container w-full h-5 bg-primary-1">Primary Color</div>
+                <div class="bg-container w-full h-5 bg-primary-2">Primary Color</div>
+                <div class="bg-container w-full h-5 bg-primary-2">Primary Color</div>
+                <div class="bg-container w-full h-5 bg-primary-3">Primary Color</div>
+                <div class="bg-container w-full h-5 bg-primary-4">Primary Color</div>
+                <div class="bg-container w-full h-5 bg-primary-5">Primary Color</div>
+                <div class="bg-container w-full h-5 bg-primary-6">Primary Color</div>
+                <div class="bg-container w-full h-5 bg-primary-7">Primary Color</div>
+                <div class="bg-container w-full h-5 bg-primary-8">Primary Color</div>
+                <div class="bg-container w-full h-5 bg-primary-9">Primary Color</div>
+                <div class="bg-container w-full h-5 bg-secondary">Secondary Color</div>
+                <div class="bg-container w-full h-5 bg-secondary-1">Secondary Color</div>
+                <div class="bg-container w-full h-5 bg-secondary-2">Secondary Color</div>
+                <div class="bg-container w-full h-5 bg-secondary-3">Secondary Color</div>
+                <div class="bg-container w-full h-5 bg-secondary-4">Secondary Color</div>
+                <div class="bg-container w-full h-5 bg-secondary-5">Secondary Color</div>
+                <div class="bg-container w-full h-5 bg-secondary-6">Secondary Color</div>
+                <div class="bg-container w-full h-5 bg-secondary-7">Secondary Color</div>
+                <div class="bg-container w-full h-5 bg-secondary-8">Secondary Color</div>
+                <div class="bg-container w-full h-5 bg-secondary-9">Secondary Color</div>
+                <div class="bg-container w-full h-5 bg-tertiary">Tertiary Color</div>
+                <div class="bg-container w-full h-5 bg-tertiary-1">Tertiary Color</div>
+                <div class="bg-container w-full h-5 bg-tertiary-2">Tertiary Color</div>
+                <div class="bg-container w-full h-5 bg-tertiary-3">Tertiary Color</div>
+                <div class="bg-container w-full h-5 bg-tertiary-4">Tertiary Color</div>
+                <div class="bg-container w-full h-5 bg-tertiary-5">Tertiary Color</div>
+                <div class="bg-container w-full h-5 bg-tertiary-6">Tertiary Color</div>
+                <div class="bg-container w-full h-5 bg-tertiary-7">Tertiary Color</div>
+                <div class="bg-container w-full h-5 bg-tertiary-8">Tertiary Color</div>
+                <div class="bg-container w-full h-5 bg-tertiary-9">Tertiary Color</div>
+                <div class="bg-container w-full h-5 bg-light text-dark">Light Color</div>
+                <div class="bg-container w-full h-5 bg-light-1 text-dark">Light Color</div>
+                <div class="bg-container w-full h-5 bg-light-2 text-dark">Light Color</div>
+                <div class="bg-container w-full h-5 bg-light-3 text-dark">Light Color</div>
+                <div class="bg-container w-full h-5 bg-light-4 text-dark">Light Color</div>
+                <div class="bg-container w-full h-5 bg-light-5 text-dark">Light Color</div>
+                <div class="bg-container w-full h-5 bg-light-6 text-dark">Light Color</div>
+                <div class="bg-container w-full h-5 bg-light-7 text-dark">Light Color</div>
+                <div class="bg-container w-full h-5 bg-light-8 text-dark">Light Color</div>
+                <div class="bg-container w-full h-5 bg-light-9 text-dark">Light Color</div>
+                <div class="bg-container w-full h-5 bg-black">Black Color</div>
+                <div class="bg-container w-full h-5 bg-black-1">Black Color</div>
+                <div class="bg-container w-full h-5 bg-black-2">Black Color</div>
+                <div class="bg-container w-full h-5 bg-black-3">Black Color</div>
+                <div class="bg-container w-full h-5 bg-black-4">Black Color</div>
+                <div class="bg-container w-full h-5 bg-black-5">Black Color</div>
+                <div class="bg-container w-full h-5 bg-black-6">Black Color</div>
+                <div class="bg-container w-full h-5 bg-black-7">Black Color</div>
+                <div class="bg-container w-full h-5 bg-black-8">Black Color</div>
+                <div class="bg-container w-full h-5 bg-black-9">Black Color</div>
+                <div class="bg-container w-full h-5 bg-grey">Grey Color</div>
+                <div class="bg-container w-full h-5 bg-grey-1">Grey Color</div>
+                <div class="bg-container w-full h-5 bg-grey-2">Grey Color</div>
+                <div class="bg-container w-full h-5 bg-grey-3">Grey Color</div>
+                <div class="bg-container w-full h-5 bg-grey-4">Grey Color</div>
+                <div class="bg-container w-full h-5 bg-grey-5">Grey Color</div>
+                <div class="bg-container w-full h-5 bg-grey-6">Grey Color</div>
+                <div class="bg-container w-full h-5 bg-grey-7">Grey Color</div>
+                <div class="bg-container w-full h-5 bg-grey-8">Grey Color</div>
+                <div class="bg-container w-full h-5 bg-grey-9">Grey Color</div>
+                <div class="bg-container w-full h-5 bg-info">Info Color</div>
+                <div class="bg-container w-full h-5 bg-warning text-dark">Warning Color</div>
+                <div class="bg-container w-full h-5 bg-error">Error Color</div>
+                <div class="bg-container w-full h-5 bg-success">Success Color</div>
+                <div class="bg-container w-full h-5 bg-pink">Pink Color</div>
+            </section>
+            <pre><code class="language-html"><xmp><div class="bg-container w-full h-5 bg-primary">Primary Color</div>
+<div class="bg-container w-full h-5 bg-primary-1">Primary Color</div>
+<div class="bg-container w-full h-5 bg-primary-9">Primary Color</div>
+<div class="bg-container w-full h-5 bg-secondary">Secondary Color</div>
+<div class="bg-container w-full h-5 bg-secondary-1">Secondary Color</div>
+<div class="bg-container w-full h-5 bg-secondary-9">Secondary Color</div>
+<div class="bg-container w-full h-5 bg-tertiary">Tertiary Color</div>
+<div class="bg-container w-full h-5 bg-tertiary-1">Tertiary Color</div>
+<div class="bg-container w-full h-5 bg-tertiary-9">Tertiary Color</div>
+<div class="bg-container w-full h-5 bg-light text-dark">Light Color</div>
+<div class="bg-container w-full h-5 bg-light-1 text-dark">Light Color</div>
+<div class="bg-container w-full h-5 bg-light-9 text-dark">Light Color</div>
+<div class="bg-container w-full h-5 bg-black">Black Color</div>
+<div class="bg-container w-full h-5 bg-black-1">Black Color</div>
+<div class="bg-container w-full h-5 bg-black-9">Black Color</div>
+<div class="bg-container w-full h-5 bg-grey">Grey Color</div>
+<div class="bg-container w-full h-5 bg-grey-1">Grey Color</div>
+<div class="bg-container w-full h-5 bg-grey-9">Grey Color</div>
+<div class="bg-container w-full h-5 bg-info">Info Color</div>
+<div class="bg-container w-full h-5 bg-warning text-dark">Warning Color</div>
+<div class="bg-container w-full h-5 bg-error">Error Color</div>
+<div class="bg-container w-full h-5 bg-success">Success Color</div>
+<div class="bg-container w-full h-5 bg-pink">Pink Color</div></xmp></code></pre>
+            <!-- <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%287%2C197%2C108%2C1%29&t=one-dark&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-primary%2522%253EPrimary%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-primary-1%2522%253EPrimary%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-primary-9%2522%253EPrimary%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-secondary%2522%253ESecondary%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-secondary-1%2522%253ESecondary%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-secondary-9%2522%253ESecondary%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-tertiary%2522%253ETertiary%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-tertiary-1%2522%253ETertiary%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-tertiary-9%2522%253ETertiary%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-light%2520text-dark%2522%253ELight%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-light-1%2520text-dark%2522%253ELight%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-light-9%2520text-dark%2522%253ELight%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-black%2522%253EBlack%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-black-1%2522%253EBlack%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-black-9%2522%253EBlack%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-grey%2522%253EGrey%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-grey-1%2522%253EGrey%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-grey-9%2522%253EGrey%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-info%2522%253EInfo%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-warning%2520text-dark%2522%253EWarning%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-error%2522%253EError%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-success%2522%253ESuccess%2520Color%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522bg-container%2520w-full%2520h-5%2520bg-pink%2522%253EPink%2520Color%253C%252Fdiv%253E"
+                    style="min-height: 100vh; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe> -->
+            <h3 class="text-xl text-light mb-2 mt-5 font-medium">Text Colors</h3>
+            <section class="mb-4">
+                <h1 class="text-container w-full h-5 text-primary">Primary Color</h1>
+                <h1 class="text-container w-full h-5 text-primary-1">Primary Color</h1>
+                <h1 class="text-container w-full h-5 text-primary-2">Primary Color</h1>
+                <h1 class="text-container w-full h-5 text-primary-2">Primary Color</h1>
+                <h1 class="text-container w-full h-5 text-primary-3">Primary Color</h1>
+                <h1 class="text-container w-full h-5 text-primary-4">Primary Color</h1>
+                <h1 class="text-container w-full h-5 text-primary-5">Primary Color</h1>
+                <h1 class="text-container w-full h-5 text-primary-6">Primary Color</h1>
+                <h1 class="text-container w-full h-5 text-primary-7">Primary Color</h1>
+                <h1 class="text-container w-full h-5 text-primary-8">Primary Color</h1>
+                <h1 class="text-container w-full h-5 text-primary-9">Primary Color</h1>
+                <h1 class="text-container w-full h-5 text-secondary">Secondary Color</h1>
+                <h1 class="text-container w-full h-5 text-secondary-1">Secondary Color</h1>
+                <h1 class="text-container w-full h-5 text-secondary-2">Secondary Color</h1>
+                <h1 class="text-container w-full h-5 text-secondary-3">Secondary Color</h1>
+                <h1 class="text-container w-full h-5 text-secondary-4">Secondary Color</h1>
+                <h1 class="text-container w-full h-5 text-secondary-5">Secondary Color</h1>
+                <h1 class="text-container w-full h-5 text-secondary-6">Secondary Color</h1>
+                <h1 class="text-container w-full h-5 text-secondary-7">Secondary Color</h1>
+                <h1 class="text-container w-full h-5 text-secondary-8">Secondary Color</h1>
+                <h1 class="text-container w-full h-5 text-secondary-9">Secondary Color</h1>
+                <h1 class="text-container w-full h-5 text-tertiary">Tertiary Color</h1>
+                <h1 class="text-container w-full h-5 text-tertiary-1">Tertiary Color</h1>
+                <h1 class="text-container w-full h-5 text-tertiary-2">Tertiary Color</h1>
+                <h1 class="text-container w-full h-5 text-tertiary-3">Tertiary Color</h1>
+                <h1 class="text-container w-full h-5 text-tertiary-4">Tertiary Color</h1>
+                <h1 class="text-container w-full h-5 text-tertiary-5">Tertiary Color</h1>
+                <h1 class="text-container w-full h-5 text-tertiary-6">Tertiary Color</h1>
+                <h1 class="text-container w-full h-5 text-tertiary-7">Tertiary Color</h1>
+                <h1 class="text-container w-full h-5 text-tertiary-8">Tertiary Color</h1>
+                <h1 class="text-container w-full h-5 text-tertiary-9">Tertiary Color</h1>
+                <h1 class="text-container w-full h-5 text-light ">Light Color</h1>
+                <h1 class="text-container w-full h-5 text-light-1 ">Light Color</h1>
+                <h1 class="text-container w-full h-5 text-light-2 ">Light Color</h1>
+                <h1 class="text-container w-full h-5 text-light-3 ">Light Color</h1>
+                <h1 class="text-container w-full h-5 text-light-4 ">Light Color</h1>
+                <h1 class="text-container w-full h-5 text-light-5 ">Light Color</h1>
+                <h1 class="text-container w-full h-5 text-light-6 ">Light Color</h1>
+                <h1 class="text-container w-full h-5 text-light-7 ">Light Color</h1>
+                <h1 class="text-container w-full h-5 text-light-8 ">Light Color</h1>
+                <h1 class="text-container w-full h-5 text-light-9 ">Light Color</h1>
+                <h1 class="text-container w-full h-5 text-black">Black Color</h1>
+                <h1 class="text-container w-full h-5 text-black-1">Black Color</h1>
+                <h1 class="text-container w-full h-5 text-black-2">Black Color</h1>
+                <h1 class="text-container w-full h-5 text-black-3">Black Color</h1>
+                <h1 class="text-container w-full h-5 text-black-4">Black Color</h1>
+                <h1 class="text-container w-full h-5 text-black-5">Black Color</h1>
+                <h1 class="text-container w-full h-5 text-black-6">Black Color</h1>
+                <h1 class="text-container w-full h-5 text-black-7">Black Color</h1>
+                <h1 class="text-container w-full h-5 text-black-8">Black Color</h1>
+                <h1 class="text-container w-full h-5 text-black-9">Black Color</h1>
+                <h1 class="text-container w-full h-5 text-grey">Grey Color</h1>
+                <h1 class="text-container w-full h-5 text-grey-1">Grey Color</h1>
+                <h1 class="text-container w-full h-5 text-grey-2">Grey Color</h1>
+                <h1 class="text-container w-full h-5 text-grey-3">Grey Color</h1>
+                <h1 class="text-container w-full h-5 text-grey-4">Grey Color</h1>
+                <h1 class="text-container w-full h-5 text-grey-5">Grey Color</h1>
+                <h1 class="text-container w-full h-5 text-grey-6">Grey Color</h1>
+                <h1 class="text-container w-full h-5 text-grey-7">Grey Color</h1>
+                <h1 class="text-container w-full h-5 text-grey-8">Grey Color</h1>
+                <h1 class="text-container w-full h-5 text-grey-9">Grey Color</h1>
+                <h1 class="text-container w-full h-5 text-info">Info Color</h1>
+                <h1 class="text-container w-full h-5 text-warning ">Warning Color</h1>
+                <h1 class="text-container w-full h-5 text-error">Error Color</h1>
+                <h1 class="text-container w-full h-5 text-success">Success Color</h1>
+                <h1 class="text-container w-full h-5 text-pink">Pink Color</h1>
+            </section>
+            <pre><code class="language-html"><xmp><h1 class="bg-container w-full h-5 text-primary">Primary Color</div>
+<h1 class="bg-container w-full h-5 text-primary-1">Primary Color</div>
+<h1 class="bg-container w-full h-5 text-primary-9">Primary Color</div>
+<h1 class="bg-container w-full h-5 text-secondary">Secondary Color</div>
+<h1 class="bg-container w-full h-5 text-secondary-1">Secondary Color</div>
+<h1 class="bg-container w-full h-5 text-secondary-9">Secondary Color</div>
+<h1 class="bg-container w-full h-5 text-tertiary">Tertiary Color</div>
+<h1 class="bg-container w-full h-5 text-tertiary-1">Tertiary Color</div>
+<h1 class="bg-container w-full h-5 text-tertiary-9">Tertiary Color</div>
+<h1 class="bg-container w-full h-5 text-light ">Light Color</div>
+<h1 class="bg-container w-full h-5 text-light-1 ">Light Color</div>
+<h1 class="bg-container w-full h-5 text-light-9 ">Light Color</div>
+<h1 class="bg-container w-full h-5 text-black">Black Color</div>
+<h1 class="bg-container w-full h-5 text-black-1">Black Color</div>
+<h1 class="bg-container w-full h-5 text-black-9">Black Color</div>
+<h1 class="bg-container w-full h-5 text-grey">Grey Color</div>
+<h1 class="bg-container w-full h-5 text-grey-1">Grey Color</div>
+<h1 class="bg-container w-full h-5 text-grey-9">Grey Color</div>
+<h1 class="bg-container w-full h-5 text-info">Info Color</div>
+<h1 class="bg-container w-full h-5 text-warning ">Warning Color</div>
+<h1 class="bg-container w-full h-5 text-error">Error Color</div>
+<h1 class="bg-container w-full h-5 text-success">Success Color</div>
+<h1 class="bg-container w-full h-5 text-pink">Pink Color</div></xmp></code></pre>
+            <!-- <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%287%2C197%2C108%2C1%29&t=one-dark&wt=none&l=css&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-primary%2522%253EPrimary%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-primary-1%2522%253EPrimary%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-primary-9%2522%253EPrimary%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-secondary%2522%253ESecondary%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-secondary-1%2522%253ESecondary%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-secondary-9%2522%253ESecondary%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-tertiary%2522%253ETertiary%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-tertiary-1%2522%253ETertiary%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-tertiary-9%2522%253ETertiary%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-light%2520%2522%253ELight%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-light-1%2520%2522%253ELight%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-light-9%2520%2522%253ELight%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-black%2522%253EBlack%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-black-1%2522%253EBlack%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-black-9%2522%253EBlack%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-grey%2522%253EGrey%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-grey-1%2522%253EGrey%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-grey-9%2522%253EGrey%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-info%2522%253EInfo%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-warning%2520%2522%253EWarning%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-error%2522%253EError%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-success%2522%253ESuccess%2520Color%253C%252Fdiv%253E%250A%253Ch1%2520class%253D%2522bg-container%2520w-full%2520h-5%2520text-pink%2522%253EPink%2520Color%253C%252Fdiv%253E"
+                    style="min-height: 100vh; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe> -->
+        </main>
 </body>
 
 </html>
