@@ -63,9 +63,7 @@ button.menu {
     display: block;
   }
 }
-.sidebar::-webkit-scrollbar {
-  width: 0.5rem;
-}
+
 .sidebar-title {
   padding: 1.2rem;
   border-bottom: 2px solid var(--primary-color);
