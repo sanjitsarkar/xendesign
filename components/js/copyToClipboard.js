@@ -39,3 +39,5 @@ clipboard.on('success', (event) => {
 function isPrismClass(preTag) { 
   return preTag.className.substring(0, 8) === 'language'
 }
+
+console.log("Hellllllllo")
