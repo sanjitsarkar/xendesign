@@ -18,7 +18,7 @@
   --secondary-color-3: hsla(152, 93%, 40%, 0.7);
   --secondary-color-2: hsla(152, 93%, 40%, 0.8);
   --secondary-color-1: hsla(152, 93%, 40%, 0.9);
-  --secondary-color: hsl(152, 93%, 40%);
+  --secondary-color: #07c56c;
   --tertiary-color-9: hsla(330, 100%, 50%, 0.1);
   --tertiary-color-8: hsla(330, 100%, 50%, 0.2);
   --tertiary-color-7: hsla(330, 100%, 50%, 0.3);
@@ -146,7 +146,7 @@
   --font-size: 1rem;
   --pd: 0.5rem;
   --m: 0.5rem;
-  --br-thickness: 1px;
+  --br-thickness: padding-bottom 1px;
   --br-radius: 0.5rem;
   --blur-1: blur(2px);
   --blur-2: blur(4px);
