@@ -42,7 +42,7 @@ button.menu {
   margin-top: 2vh;
   height: 100vh;
   padding-bottom: 12vh;
-  border-right: 2px solid var(--secondary-color);
+  border-right: 2px solid var(--primary-color);
 }
 .show {
   display: block !important;
@@ -68,7 +68,7 @@ button.menu {
 }
 .sidebar-title {
   padding: 1.2rem;
-  border-bottom: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 .sidebar ul li {
   cursor: pointer;
@@ -116,8 +116,8 @@ pre[class*="language-"] {
   max-width: fit-content;
   background: var(--dark-color) !important;
   border-radius: var(--radius);
-  border: 1px solid var(--secondary-color);
-  box-shadow: 0 0 1rem var(--secondary-color-9);
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 1rem var(--primary-color-9);
 }
 
 pre[class*="language-"] .copy {
