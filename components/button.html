@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="../components/css/style.css">
+    <link rel="stylesheet" href="../components/css/prism.css">
+    <script src="../js/index.js" defer></script>
+    <script src="../components/js/index.js" defer></script>
+    <script src="../components/js/prism.js" defer></script>
+
+
+    <title>XenDesign</title>
+</head>
+
+<body class="bg-dark  overflow-x-hidden text-light">
+    <header class="p-3 pt-2 pb-2 t-0 l-0 fixed bg-dark w-full bx-sh-primary-3 row justify-between items-center">
+        <div class="row gap-1 items-center">
+            <button class="menu btn-round-md bg-primary ml-2">
+                <fa class="fa fa-bars"></fa>
+            </button>
+            <div class="row gap-1 items-center">
+                <img src="./img/logo.png" alt="" class="w-14">
+                <a href="../index.html" class="text-xl title">XenDesign</a>
+            </div>
+        </div>
+        <a href="https://github.com/sanjitsarkar/xendesign" target="_blank" class="text-xl"><i
+                class="fab fa-github fa-2x"></i>
+        </a>
+
+    </header>
+    <main class="container h-full w-full row">
+        <aside class="w-1-6 sidebar  overflow-y-auto ">
+            <h1 class="sidebar-title font-bold text-xl pb-1 pl-3">
+                Get Started
+            </h1>
+            <ul class="list top-list p-1" id="top-list">
+
+                <li>Installation</li>
+                <li>Color</li>
+                <li>Typography</li>
+            </ul>
+            <h1 class="sidebar-title font-bold text-xl pb-1 pl-0">
+                Components
+            </h1>
+            <ul class="list bottom-list p-1" id="bottom-list">
+                <li>Alert</li>
+                <li>Avatar</li>
+                <li>Badge</li>
+                <li class="active">Button</li>
+                <li>Card</li>
+                <li>Image</li>
+                <li>Input</li>
+                <li>Modal</li>
+                <li>List</li>
+                <li>Toast</li>
+                <li>Rating</li>
+                <li>Slider</li>
+                <li>Grid</li>
+                <li>Navigation</li>
+            </ul>
+        </aside>
+        <main class="component-wrapper">
+            <h1 class="text-2xl  mb-3 text-primary ">Button</h1>
+            <h3 class="text-xl text-light mb-2  font-medium">Simple Buton</h3>
+            <section class=" norma-button-section row gap-1 mb-3 align-center">
+                <button class="btn btn-disabled">Disabled</button>
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-tertiary">Tertiary</button>
+                <button class="btn btn-success">Success</button>
+                <button class="btn btn-warning">Warning</button>
+                <button class="btn btn-error">Error</button>
+                <button class="btn btn-info">Info</button>
+                <button class="btn btn-light">Light</button>
+                <button class="btn btn-dark">Dark</button>
+                <button class="btn btn-grey">Grey</button>
+            </section>
+            <pre><code class="language-html"><xmp><button class="btn btn-disabled">Disabled</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-tertiary">Tertiary</button>
+<button class="btn btn-success">Success</button>
+<button class="btn btn-warning">Warning</button>
+<button class="btn btn-error">Error</button>
+<button class="btn btn-info">Info</button>
+<button class="btn btn-light">Light</button>
+<button class="btn btn-dark">Dark</button>
+<button class="btn btn-grey">Grey</button></xmp></code></pre>
+            <h3 class="text-xl text-light mb-2 mt-5 font-medium">Outlined Button</h3>
+            <section class="outlined-button-section row gap-1 mt-1 mb-3 align-center">
+                <button class="btn btn-outline-primary">Primary Outlined</button>
+                <button class="btn btn-outline-secondary">Secondary Outlined</button>
+                <button class="btn btn-outline-tertiary">Tertiary Outlined</button>
+                <button class="btn btn-outline-success">Success Outlined</button>
+                <button class="btn btn-outline-warning">Warning Outlined</button>
+                <button class="btn btn-outline-error">Error Outlined</button>
+                <button class="btn btn-outline-info">Info Outlined</button>
+                <button class="btn btn-outline-dark">Dark Outlined</button>
+                <button class="btn btn-outline-light">Light Outlined</button>
+                <button class="btn btn-outline-grey">Grey Outlined</button>
+            </section>
+            <pre><code class="language-html"><xmp><button class="btn btn-outline-primary">primary Outlined</button>
+<button class="btn btn-outline-primary">primary Outlined</button>
+<button class="btn btn-outline-tertiary">Tertiary Outlined</button>
+<button class="btn btn-outline-success">Success Outlined</button>
+<button class="btn btn-outline-warning">Warning Outlined</button>
+<button class="btn btn-outline-error">Error Outlined</button>
+<button class="btn btn-outline-info">Info Outlined</button>
+<button class="btn btn-outline-dark">Dark Outlined</button>
+<button class="btn btn-outline-light">Light Outlined</button>
+<button class="btn btn-outline-grey">Grey Outlined</button></xmp></code></pre>
+            <h3 class="text-xl text-light mb-2 mt-5 font-medium">Icon Button with and without badge</h3>
+            <section class="icon-badge-section row gap-1 mt-1 mb-3 align-center">
+                <button class="btn btn-round btn-primary">
+                    <i class="fa fa-shopping-cart"></i>
+                </button>
+                <button class="btn btn-round-md btn-primary">
+                    <i class="fa fa-user"></i>
+                    <span class="badge badge-error">12</span>
+                </button>
+            </section>
+            <pre><code class="language-html"><xmp><button class="btn btn-round btn-primary">
+<i class="fa fa-shopping-cart"></i>
+</button>
+<button class="btn btn-round-md btn-primary">
+<i class="fa fa-user"></i>
+<span class="badge badge-error">12</span>
+</button></xmp></code></pre>
+            <h3 class="text-xl text-light mb-2 mt-5 font-medium">Link Button</h3>
+            <section class="icon-badge-section row gap-1 mt-1 mb-3 align-center">
+                <a href="" class="btn-link">Link Button</a>
+            </section>
+            <pre><code class="language-html"><xmp><a href="" class="btn-link">Link Button</a></xmp></code></pre>
+            <h3 class="text-xl text-light mb-2 mt-5 font-medium">Floating Action Button</h3>
+            <section class="icon-badge-section row gap-1 mt-1 mb-3 align-center">
+                <button class="btn btn-float-right bg-pink text-light">
+                    <i class="fa fa-heart"></i>
+                </button>
+                <button class="btn btn-float-left-lg btn-light">
+                    <i class="fa fa-add"></i>
+                </button>
+            </section>
+            <pre><code class="language-html"><xmp><button class="btn btn-float-right bg-pink text-light">
+    <i class="fa fa-heart"></i>
+</button>
+<button class="btn btn-float-left-lg btn-light">
+    <i class="fa fa-add"></i>
+</button></xmp></code></pre>
+        </main>
+    </main>
+</body>
+
+</html>

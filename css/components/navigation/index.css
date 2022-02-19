@@ -1,0 +1,43 @@
+.nav {
+  padding: 0.3rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.nav .nav-header-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav .nav-header-section .nav-title-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav .nav-header-section .nav-title-section .nav-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.nav .nav-header-section .nav-title-section .nav-logo {
+  width: 2.5rem;
+  object-fit: cover;
+}
+.nav .nav-header-section .nav-menu {
+  display: grid;
+  place-content: center;
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.nav .nav-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

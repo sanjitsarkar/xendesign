@@ -19,9 +19,6 @@
 .slider:focus {
   border: none;
 }
-.slider-value {
-  color: var(--dark-color);
-}
 .slider:hover {
   opacity: 0.9;
 }

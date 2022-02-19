@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="../components/css/style.css">
+    <link rel="stylesheet" href="../components/css/prism.css">
+    <script src="../js/index.js" defer></script>
+    <script src="../components/js/index.js" defer></script>
+    <script src="../components/js/prism.js" defer></script>
+
+
+    <title>XenDesign</title>
+</head>
+
+<body class="bg-dark  overflow-x-hidden text-light">
+    <header class="p-3 pt-2 pb-2 t-0 l-0 fixed bg-dark w-full bx-sh-primary-3 row justify-between items-center">
+        <div class="row gap-1 items-center">
+            <button class="menu btn-round-md  bg-primary ml-2">
+                <fa class="fa fa-bars"></fa>
+            </button>
+            <div class="row gap-1 items-center">
+                <img src="./img/logo.png" alt="" class="w-14">
+                <a href="../index.html" class="text-xl title">XenDesign</a>
+            </div>
+        </div>
+        <a href="https://github.com/sanjitsarkar/xendesign" target="_blank" class="text-xl"><i
+                class="fab fa-github fa-2x"></i>
+        </a>
+
+    </header>
+    <main class="container h-full w-full row">
+        <aside class="w-1-6 sidebar  overflow-y-auto ">
+            <h1 class="sidebar-title font-bold text-xl pb-1 pl-3">
+                Get Started
+            </h1>
+            <ul class="list top-list p-1" id="top-list">
+
+                <li>Installation</li>
+                <li>Color</li>
+                <li>Typography</li>
+            </ul>
+            <h1 class="sidebar-title font-bold text-xl pb-1 pl-0">
+                Components
+            </h1>
+            <ul class="list bottom-list p-1" id="bottom-list">
+                <li>Alert</li>
+                <li>Avatar</li>
+                <li>Badge</li>
+                <li>Button</li>
+                <li class="active">Card</li>
+                <li>Image</li>
+                <li>Input</li>
+                <li>Modal</li>
+                <li>List</li>
+                <li>Toast</li>
+                <li>Rating</li>
+                <li>Slider</li>
+                <li>Grid</li>
+                <li>Navigation</li>
+            </ul>
+        </aside>
+        <main class="component-wrapper">
+            <h1 class="text-2xl  mb-3 text-primary ">Card</h1>
+            <h3 class="text-xl text-light mb-2  font-medium">Simple Card</h3>
+            <section class=" normal-card-section row gap-1 mb-3 align-center">
+                <div class="card card-lg">
+                    <div class="card-header">
+                        <img src="https://images.samsung.com/uk/smartphones/galaxy-s20/images/kv/galaxy-s20_highlights_kv_00.jpg"
+                            alt="Samsung X3S" class="w-full">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-body">
+                            <div class="card-title">Samsung X3S</div>
+                            <p class="card-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur. Obcaecati
+                                unde
+                                ipsum nihil
+                                sapiente quos! Doloribus, officia dignissimos!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">₹1000200000</h4>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <button class=" btn-round-md btn bg-pink text-light">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-round-md  btn-primary">
+                                    <i class="fa fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-md">
+                    <div class="card-header">
+                        <img src="https://images.samsung.com/uk/smartphones/galaxy-s20/images/kv/galaxy-s20_highlights_kv_00.jpg"
+                            alt="Samsung X3S" class="w-full">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-body">
+                            <div class="card-title">Samsung X3S</div>
+                            <p class="card-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur. Obcaecati
+                                unde
+                                ipsum nihil
+                                sapiente quos! Doloribus, officia dignissimos!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">₹1000200000</h4>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <button class=" btn-round-md btn bg-pink text-light">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-round-md  btn-primary">
+                                    <i class="fa fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-sm">
+                    <div class="card-header">
+                        <img src="https://images.samsung.com/uk/smartphones/galaxy-s20/images/kv/galaxy-s20_highlights_kv_00.jpg"
+                            alt="Samsung X3S" class="w-full">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-body">
+                            <div class="card-title">Samsung X3S</div>
+                            <p class="card-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur. Obcaecati
+                                unde
+                                ipsum nihil
+                                sapiente quos! Doloribus, officia dignissimos!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">₹1000200000</h4>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <button class=" btn-round-md btn bg-pink text-light">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-round-md  btn-primary">
+                                    <i class="fa fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <pre><code class="language-html"><xmp><div class="card card-md">
+    <div class="card-header">
+        <img src="https://images.samsung.com/uk/smartphones/galaxy-s20/images/kv/galaxy-s20_highlights_kv_00.jpg"
+                        alt="Samsung X3S" class="w-full"/>
+    </div>
+    <div class="card-bottom">
+        <div class="card-body">
+            <div class="card-title">Samsung X3S</div>
+            <p class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur. Obcaecati
+                unde
+                ipsum nihil
+                sapiente quos! Doloribus, officia dignissimos!
+            </p>
+        </div>
+        <div class="card-footer">
+            <div class="row items-center gap-05">
+                <h4 class="o-70 font-semibold">Price</h4>
+                <h4 class="text-md font-medium">₹1000200000</h4>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-round-md btn-dark">
+                    <i class="fa fa-shopping-cart"></i>
+                </button>
+                <button class=" btn-round-md btn bg-pink text-light">
+                    <i class="fa fa-heart"></i>
+                </button>
+                <button class="btn btn-round-md  btn-primary">
+                    <i class="fa fa-share"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div></xmp></code></pre>
+            <h3 class="text-xl text-light mb-2 mt-5 font-medium">Card with Badge</h3>
+            <section class="component-section row gap-1 mb-4">
+
+                <div class="card card-lg">
+                    <div class="card-header">
+                        <div class="card-badge bg-primary">Trending</div>
+                        <img src="https://s.yimg.com/os/creatr-uploaded-images/2021-09/de2e6bc0-1a9b-11ec-bef7-5c6aa1cb549c"
+                            alt="Iphone 13S" />
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-body">
+                            <div class="card-title">Iphone 13 Pro</div>
+                            <p class="card-description">
+                                iPhone 13 Pro takes a huge leap forward, bringing incredible speed to everything you do
+                                and
+                                dramatic new
+                                photo and video capabilities — all in two great sizes.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">₹102000</h4>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <button class=" btn-round-md btn bg-pink text-light">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-round-md  btn-primary">
+                                    <i class="fa fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-md">
+                    <div class="card-header">
+                        <div class="card-badge  bg-secondary">Most Rated</div>
+                        <img src="https://s.yimg.com/os/creatr-uploaded-images/2021-09/de2e6bc0-1a9b-11ec-bef7-				5c6aa1cb549c"
+                            alt="Iphone 13S" />
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-body">
+                            <div class="card-title">Iphone 13 Pro</div>
+                            <p class="card-description">
+                                iPhone 13 Pro takes a huge leap forward, bringing incredible speed to everything you do
+                                and
+                                dramatic new
+                                photo and video capabilities — all in two great sizes.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">₹102000</h4>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <button class=" btn-round-md btn bg-pink text-light">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-round-md  btn-primary">
+                                    <i class="fa fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-sm">
+                    <div class="card-header">
+                        <div class="card-badge bg-info">30% Off</div>
+                        <img src="https://s.yimg.com/os/creatr-uploaded-images/2021-09/de2e6bc0-1a9b-11ec-bef7-5c6aa1cb549c"
+                            alt="Iphone 13S" />
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-body">
+                            <div class="card-title">Iphone 13 Pro</div>
+                            <p class="card-description">
+                                iPhone 13 Pro takes a huge leap forward, bringing incredible speed to everything you do
+                                and
+                                dramatic new
+                                photo and video capabilities — all in two great sizes.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">₹102000</h4>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <button class=" btn-round-md btn bg-pink text-light">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-round-md  btn-primary">
+                                    <i class="fa fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <pre><code class="language-html"><xmp><div class="card card-md">
+    <div class="card-header">
+        <div class="card-badge  bg-secondary">Most Rated</div>
+        <img src="https://s.yimg.com/os/creatr-uploaded-images/2021-09/de2e6bc0-1a9b-11ec-bef7-5c6aa1cb549c"
+            alt="Iphone 13S" />
+    </div>
+    <div class="card-bottom">
+        <div class="card-body">
+            <div class="card-title">Iphone 13 Pro</div>
+            <p class="card-description">
+                iPhone 13 Pro takes a huge leap forward, bringing incredible speed to everything you do
+                and
+                dramatic new
+                photo and video capabilities — all in two great sizes.
+            </p>
+        </div>
+        <div class="card-footer">
+            <div class="row items-center gap-05">
+                <h4 class="o-70 font-semibold">Price</h4>
+                <h4 class="text-md font-medium">₹102000</h4>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-round-md btn-dark">
+                    <i class="fa fa-shopping-cart"></i>
+                </button>
+                <button class=" btn-round-md btn bg-pink text-light">
+                    <i class="fa fa-heart"></i>
+                </button>
+                <button class="btn btn-round-md  btn-primary">
+                    <i class="fa fa-share"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</xmp></code></pre>
+            <h3 class="text-xl text-light mt-5 mb-2  font-medium">Responsive Horizontal Card</h3>
+            <section class=" card-with-badge-section row gap-1 align-center mb-3">
+                <div class="card card-horizontal">
+                    <div class="card-header">
+                        <div class="card-badge bg-tertiary">
+                            Most Rated</div>
+                        <img src="https://i01.appmifile.com/webfile/globalimg/dongxuechun/Lark20211119-195301.jpg?width=398&height=320"
+                            alt="Poco F10">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-body">
+                            <div class="card-title">Poco F10</div>
+                            <p class="card-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur.
+                                Obcaecati
+                                unde
+                                ipsum nihil
+                                sapiente quos! Doloribus, officia dignissimos!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">₹1000200000</h4>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <button class=" btn-round-md btn bg-pink text-light">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-round-md  btn-primary">
+                                    <i class="fa fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <pre><code class="language-html"><xmp><div class="card card-horizontal">
+    <div class="card-header">
+        <div class="card-badge bg-tertiary">
+            Most Rated</div>
+        <img src="https://i01.appmifile.com/webfile/globalimg/dongxuechun/Lark20211119-195301.jpg?width=398&height=320"
+            alt="Poco F10">
+    </div>
+    <div class="card-bottom">
+        <div class="card-body">
+            <div class="card-title">Poco F10</div>
+            <p class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur.
+                Obcaecati
+                unde
+                ipsum nihil
+                sapiente quos! Doloribus, officia dignissimos!
+            </p>
+        </div>
+        <div class="card-footer">
+            <div class="row items-center gap-05">
+                <h4 class="o-70 font-semibold">Price</h4>
+                <h4 class="text-md font-medium">₹1000200000</h4>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-round-md btn-dark">
+                    <i class="fa fa-shopping-cart"></i>
+                </button>
+                <button class=" btn-round-md btn bg-pink text-light">
+                    <i class="fa fa-heart"></i>
+                </button>
+                <button class="btn btn-round-md  btn-primary">
+                    <i class="fa fa-share"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div></xmp></code></pre>
+            <h3 class="text-xl text-light mt-5 mb-2  font-medium">Text Overlay Card</h3>
+            <section class="component-section row gap-1 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-text-overlay bg-dark-2 text-light text-2xl">
+                            Best Selling</div>
+                        <img src="https://oasis.opstatics.com/content/dam/oasis/page/2021/operation/1227/store/pc/01-Featured-2.jpg"
+                            alt="One Plus 10" class="h-40 w-full">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-body">
+                            <div class="card-title">One Plus 10</div>
+                            <p class="card-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur.
+                                Obcaecati
+                                unde
+                                ipsum nihil
+                                sapiente quos! Doloribus, officia dignissimos!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row items-center gap-05">
+                                <h4 class="o-70 font-semibold">Price</h4>
+                                <h4 class="text-md font-medium">₹1000200000</h4>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn btn-round-md btn-dark">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <button class=" btn-round-md btn bg-pink text-light">
+                                    <i class="fa fa-heart"></i>
+                                </button>
+                                <button class="btn btn-round-md  btn-primary">
+                                    <i class="fa fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-82 h-52 ">
+                    <div class="card-text-overlay bg-black-2 w-full h-full text-3xl text-primary  b-solid br-primary">
+                        Best Selling</div>
+                    <img src="https://oasis.opstatics.com/content/dam/oasis/page/2021/operation/1227/store/pc/01-Featured-2.jpg"
+                        alt="One Plus 10" class="h-full w-full">
+
+                </div>
+            </section>
+            <pre><code class="language-html"><xmp><div class="card">
+    <div class="card-header">
+        <div class="card-text-overlay bg-dark-2 text-light text-2xl">
+            Best Selling</div>
+        <img src="https://oasis.opstatics.com/content/dam/oasis/page/2021/operation/1227/store/pc/01-Featured-2.jpg"
+            alt="One Plus 10" class="h-40 w-full">
+    </div>
+    <div class="card-bottom">
+        <div class="card-body">
+            <div class="card-title">One Plus 10</div>
+            <p class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, aut tenetur.
+                Obcaecati
+                unde
+                ipsum nihil
+                sapiente quos! Doloribus, officia dignissimos!
+            </p>
+        </div>
+        <div class="card-footer">
+            <div class="row items-center gap-05">
+                <h4 class="o-70 font-semibold">Price</h4>
+                <h4 class="text-md font-medium">₹1000200000</h4>
+            </div>
+            <div class="card-actions">
+                <button class="btn btn-round-md btn-dark">
+                    <i class="fa fa-shopping-cart"></i>
+                </button>
+                <button class=" btn-round-md btn bg-pink text-light">
+                    <i class="fa fa-heart"></i>
+                </button>
+                <button class="btn btn-round-md  btn-primary">
+                    <i class="fa fa-share"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div></xmp></code></pre>
+            <h3 class="text-xl text-light mt-5 mb-2  font-medium">Text Only Card</h3>
+            <section class=" component-section row gap-1 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">
+                            Text Only Card
+                        </h1>
+                        <p class="card-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repellat iusto
+                            explicabo omnis
+                            aliquam
+                            dignissimos aperiam consectetur aut quod in.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row items-center gap-05">
+                            <h4 class="o-70 font-semibold">Price</h4>
+                            <h4 class="text-md font-medium">₹1000200000</h4>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-round-md btn-dark">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                            <button class=" btn-round-md btn bg-pink text-light">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                            <button class="btn btn-round-md  btn-primary">
+                                <i class="fa fa-share"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <pre><code class="language-html"><xmp><div class="card">
+    <div class="card-body">
+        <h1 class="card-title">
+            Text Only Card
+        </h1>
+        <p class="card-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repellat iusto
+            explicabo omnis
+            aliquam
+            dignissimos aperiam consectetur aut quod in.
+        </p>
+    </div>
+    <div class="card-footer">
+        <div class="row items-center gap-05">
+            <h4 class="o-70 font-semibold">Price</h4>
+            <h4 class="text-md font-medium">₹1000200000</h4>
+        </div>
+        <div class="card-actions">
+            <button class="btn btn-round-md btn-dark">
+                <i class="fa fa-shopping-cart"></i>
+            </button>
+            <button class=" btn-round-md btn bg-pink text-light">
+                <i class="fa fa-heart"></i>
+            </button>
+            <button class="btn btn-round-md  btn-primary">
+                <i class="fa fa-share"></i>
+            </button>
+        </div>
+    </div>
+</div></xmp></code></pre>
+
+        </main>
+    </main>
+</body>
+
+</html>

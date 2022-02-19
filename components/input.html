@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="../components/css/style.css">
+    <link rel="stylesheet" href="../components/css/prism.css">
+    <script src="../js/index.js" defer></script>
+    <script src="../components/js/index.js" defer></script>
+    <script src="../components/js/prism.js" defer></script>
+
+
+    <title>XenDesign</title>
+</head>
+
+<body class="bg-dark  overflow-x-hidden text-light">
+    <header class="p-3 pt-2 pb-2 t-0 l-0 fixed bg-dark w-full bx-sh-primary-3 row justify-between items-center">
+        <div class="row gap-1 items-center">
+            <button class="menu btn-round-md bg-primary ml-2">
+                <fa class="fa fa-bars"></fa>
+            </button>
+            <div class="row gap-1 items-center">
+                <img src="./img/logo.png" alt="" class="w-14">
+                <a href="../index.html" class="text-xl title">XenDesign</a>
+            </div>
+        </div>
+        <a href="https://github.com/sanjitsarkar/xendesign" target="_blank" class="text-xl"><i
+                class="fab fa-github fa-2x"></i>
+        </a>
+
+    </header>
+    <main class="container h-full w-full row">
+        <aside class="w-1-6 sidebar  overflow-y-auto ">
+            <h1 class="sidebar-title font-bold text-xl pb-1 pl-3">
+                Get Started
+            </h1>
+            <ul class="list top-list p-1" id="top-list">
+
+                <li>Installation</li>
+                <li>Color</li>
+                <li>Typography</li>
+            </ul>
+            <h1 class="sidebar-title font-bold text-xl pb-1 pl-0">
+                Components
+            </h1>
+            <ul class="list bottom-list p-1" id="bottom-list">
+                <li>Alert</li>
+                <li>Avatar</li>
+                <li>Badge</li>
+                <li>Button</li>
+                <li>Card</li>
+                <li>Image</li>
+                <li class="active">Input</li>
+                <li>Modal</li>
+                <li>List</li>
+                <li>Toast</li>
+                <li>Rating</li>
+                <li>Slider</li>
+                <li>Grid</li>
+                <li>Navigation</li>
+            </ul>
+        </aside>
+
+        <main class="component-wrapper">
+            <h1 class="text-2xl  mb-3 text-primary">Input</h1>
+            <h3 class="text-xl text-light mb-2 mt-5 font-medium">Input Fields with Error Styles</h3>
+            <section class=" component-section row gap-1 mb-4">
+                <input type="text" placeholder="Enter your name" class="input">
+                <input type="text" placeholder="Enter your name" class="input input-dark">
+                <input type="text" placeholder="Enter your name" class="input input-success">
+                <input type="text" placeholder="Enter your name" class="input input-warning">
+                <input type="text" placeholder="Enter your name" class="input input-error">
+            </section>
+            <pre><code class="language-html"><xmp><input type="text" placeholder="Enter your name" class="input">
+<input type="text" placeholder="Enter your name" class="input input-dark">
+<input type="text" placeholder="Enter your name" class="input input-success">
+<input type="text" placeholder="Enter your name" class="input input-warning">
+<input type="text" placeholder="Enter your name" class="input input-error"></xmp></code></pre>
+            <h3 class="text-xl text-light mt-5 mb-2  font-medium ">Input Fields with Icon</h3>
+            <section class=" component-section row gap-1 mb-4">
+                <div class="input-box input input-dark">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Enter your name" class="input">
+                </div>
+                <div class="input-box input input-dark">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Enter your password" class="input">
+                    <i class="fa fa-eye"></i>
+                </div>
+            </section>
+            <pre><code class="language-html"><xmp><div class="input-box input input-dark">
+    <i class="fa fa-search"></i>
+    <input type="text" placeholder="Enter your name" class="input">
+</div>
+<div class="input-box input input-dark">
+    <i class="fa fa-lock"></i>
+    <input type="password" placeholder="Enter your password" class="input">
+    <i class="fa fa-eye"></i>
+</div></xmp></code></pre>
+            <h3 class="text-xl text-light mt-5 mb-2  font-medium ">Switch, Checkbox and Radiobox</h3>
+            <section class=" component-section row gap-1 mb-4">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="switch-slider"></span>
+                </label>
+                <label class="checkbox-container">One
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox-container">Two
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">Male
+                    <input type="radio" name="radio" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">Female
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+            </section>
+            <pre><code class="language-html"><xmp><label class="switch">
+    <input type="checkbox">
+    <span class="switch-slider"></span>
+</label>
+<label class="checkbox-container">One
+    <input type="checkbox" checked="checked">
+    <span class="checkmark"></span>
+</label>
+<label class="checkbox-container">Two
+    <input type="checkbox">
+    <span class="checkmark"></span>
+</label>
+<label class="radio-container">Male
+    <input type="radio" name="radio" checked>
+    <span class="checkmark"></span>
+</label>
+<label class="radio-container">Female
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+</label></xmp></code></pre>
+        </main>
+    </main>
+</body>
+
+</html>

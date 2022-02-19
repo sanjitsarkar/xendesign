@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="../components/css/style.css">
+    <link rel="stylesheet" href="../components/css/prism.css">
+    <script src="../js/index.js" defer></script>
+    <script src="../components/js/index.js" defer></script>
+    <script src="../components/js/prism.js" defer></script>
+
+
+    <title>XenDesign</title>
+</head>
+
+<body class="bg-dark  overflow-x-hidden text-light">
+    <header class="p-3 pt-2 pb-2 t-0 l-0 fixed bg-dark w-full bx-sh-primary-3 row justify-between items-center">
+        <div class="row gap-1 items-center">
+            <button class="menu btn-round-md bg-primary ml-2">
+                <fa class="fa fa-bars"></fa>
+            </button>
+            <div class="row gap-1 items-center">
+                <img src="./img/logo.png" alt="" class="w-14">
+                <a href="../index.html" class="text-xl title">XenDesign</a>
+            </div>
+        </div>
+        <a href="https://github.com/sanjitsarkar/xendesign" target="_blank" class="text-xl"><i
+                class="fab fa-github fa-2x"></i>
+        </a>
+
+    </header>
+    <main class="container h-full w-full row">
+        <aside class="w-1-6 sidebar  overflow-y-auto ">
+            <h1 class="sidebar-title font-bold text-xl pb-1 pl-3">
+                Get Started
+            </h1>
+            <ul class="list top-list p-1" id="top-list">
+
+                <li>Installation</li>
+                <li>Color</li>
+                <li>Typography</li>
+            </ul>
+            <h1 class="sidebar-title font-bold text-xl pb-1 pl-0">
+                Components
+            </h1>
+            <ul class="list bottom-list p-1" id="bottom-list">
+                <li>Alert</li>
+                <li>Avatar</li>
+                <li>Badge</li>
+                <li>Button</li>
+                <li>Card</li>
+                <li>Image</li>
+                <li>Input</li>
+                <li class="active">Modal</li>
+                <li>List</li>
+                <li>Toast</li>
+                <li>Rating</li>
+                <li>Slider</li>
+                <li>Grid</li>
+                <li>Navigation</li>
+            </ul>
+        </aside>
+        <main class="component-wrapper">
+            <h1 class="text-2xl  mb-3 text-primary">Modal</h1>
+            <h3 class="text-xl text-light mb-2 font-medium">Normal Modal</h3>
+            <section class=" component-section row gap-1 mb-4">
+                <button id="open-modal" class="btn btn-success">Open Modal</button>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="close">&times;</span>
+                        <div class="text-dark">Write your modal content here</div>
+                    </div>
+                </div>
+            </section>
+            <pre><code class="language-html"><xmp><button id="open-modal" class="btn btn-success">Open Modal</button>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close">&times;</span>
+        <div class="text-dark">Write your modal content here</div>
+    </div>
+</div></xmp></code></pre>
+        </main>
+    </main>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../components/css/style.css">
+    <script src="../js/index.js" defer></script>
+    <title>XenDesign</title>
+</head>
+
+<body class="bg-dark overflow-x-hidden text-light">
+
+    <main class="component-wrapper">
+        <h1 class="text-2xl  mb-3 text-primary">Modal</h1>
+        <h3 class="text-xl text-light mb-2 font-medium">Normal Modal</h3>
+        <section class=" component-section row gap-1 mb-4">
+            <button id="open-modal" class="btn btn-success">Open Modal</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close">&times;</span>
+                    <div class="text-dark">Write your modal content here</div>
+                </div>
+            </div>
+        </section>
+        <!-- <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%287%2C197%2C108%2C1%29&t=one-dark&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520id%253D%2522open-modal%2522%2520class%253D%2522btn%2520btn-success%2522%253EOpen%2520Modal%253C%252Fbutton%253E%250A%2520%253Cdiv%2520id%253D%2522modal%2522%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522close%2522%2520id%253D%2522close%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-dark%2522%253EWrite%2520your%2520modal%2520content%2520here%253C%252Fdiv%253E%250A%2520%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            style=" min-height: 50vh; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe> -->
+    </main>
+</body>
+
+</html>

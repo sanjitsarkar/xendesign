@@ -3,6 +3,7 @@ input[type="submit"] {
   cursor: pointer;
   outline: none;
   border: none;
+  background: transparent;
   padding: 0.5rem 0.6rem;
   border-radius: 0.3rem;
 }
@@ -19,11 +20,11 @@ input[type="submit"] {
   border-radius: 0.3rem;
   box-shadow: var(--bx-sh-1);
   transform: scale(1);
-  font-size: 0.9rem;
+
   transition: all 0.1s ease-in-out;
 }
 .btn-link {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   position: relative;
 }
 
@@ -31,7 +32,7 @@ input[type="submit"] {
   content: "";
   height: 2px;
   position: absolute;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   top: 100%;
   left: 0%;
   width: 100%;
@@ -102,17 +103,29 @@ input[type="submit"] {
   background-color: var(--grey-color);
   color: var(--light-color);
 }
-.btn-outline-primary,
 .btn-outline-dark,
+.btn-outline-light,
+.btn-outline-grey,
 .btn-outline-error,
 .btn-outline-info,
 .btn-outline-success,
 .btn-outline-warning,
-.btn-outline-secondary,
+.btn-outline-primary,
 .btn-outline-tertiary,
-.btn-outline-primary {
+.btn-outline-secondary {
   border: 0.5px solid;
-  background-color: var(--light-color);
+}
+.btn-outline-dark:hover,
+.btn-outline-light:hover,
+.btn-outline-grey:hover,
+.btn-outline-error:hover,
+.btn-outline-info:hover,
+.btn-outline-success:hover,
+.btn-outline-warning:hover,
+.btn-outline-primary:hover,
+.btn-outline-tertiary:hover,
+.btn-outline-secondary:hover {
+  opacity: 1;
 }
 .btn-outline-primary {
   border-color: var(--primary-color);
@@ -179,6 +192,19 @@ input[type="submit"] {
   background-color: var(--dark-color);
   color: var(--light-color);
 }
+.btn-outline-dark:hover {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+.btn-outline-light {
+  border-color: var(--light-color);
+  color: var(--light-color);
+}
+.btn-outline-light:hover {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
 .btn-outline-grey {
   border-color: var(--grey-color);
   color: var(--grey-color);
