@@ -78,6 +78,9 @@ button.menu {
   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .sidebar ul li:hover {
+  background-color: var(--light-color-8);
+}
+li.active {
   background-color: var(--light-color-9);
 }
 

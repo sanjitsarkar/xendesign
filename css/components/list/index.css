@@ -1,0 +1,79 @@
+ul.list-group {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+li.list-item {
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.list-item:hover {
+  background-color: var(--light-color-8);
+}
+.list-item .active {
+  background-color: var(--light-color-9);
+}
+.horizontal-list {
+  flex-direction: row !important;
+}
+
+.list-group.bordered-list {
+  border-bottom: 1px solid var(--light-color);
+}
+.list-group:last-child {
+  border: none;
+}
+
+ul.list-group.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+ul.list-group.notification-list .list-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  align-items: center;
+  border: 1px solid var(--primary-color);
+}
+ul.list-group.notification-list .list-item:hover {
+  background: var(--primary-color);
+  color: var(--dark-color);
+  transition: all 0.1s ease-in-out;
+}
+
+.list-item-icon {
+  padding: 0.3rem;
+  font-size: 1.5rem;
+}
+.list-item-body {
+  display: flex;
+  flex-direction: column;
+}
+.list-item-body .list-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-item-body .list-item-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.list-item-body .list-item-description {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  opacity: 0.7;
+}
+.list-item-body .list-item-trailing {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  opacity: 0.7;
+}
+
+.list-item:hover .list-item-description,
+.list-item:hover .list-item-trailing {
+  opacity: 0.9;
+}
