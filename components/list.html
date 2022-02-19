@@ -11,8 +11,8 @@
     <script src="../js/index.js" defer></script>
     <script src="../components/js/index.js" defer></script>
     <script src="../components/js/prism.js" defer></script>
-    <script src="../components/js/clipboard.min.js" defer></script>
-    <script src="../components/js/copyToClipboard.js" defer></script>
+
+
     <title>XenDesign</title>
 </head>
 
@@ -49,13 +49,13 @@
             <ul class="list bottom-list p-1" id="bottom-list">
                 <li>Alert</li>
                 <li>Avatar</li>
-                <li>Badge</button></li>
+                <li>Badge</li>
                 <li>Button</li>
                 <li>Card</li>
                 <li>Image</li>
                 <li>Input</li>
                 <li>Modal</li>
-                <li>List</li>
+                <li class="active">List</li>
                 <li>Toast</li>
                 <li>Rating</li>
                 <li>Slider</li>
@@ -68,15 +68,158 @@
             <h3 class="text-xl text-light mb-2  font-medium">Normal List</h3>
 
             <section class=" component-section row gap-1 mb-4">
-
+                <ul class="list-group">
+                    <li class="list-item active">
+                        Footwear
+                    </li>
+                    <li class="list-item">
+                        Clothes
+                    </li>
+                    <li class="list-item">
+                        T-Shirt
+                    </li>
+                    <li class="list-item">
+                        Jeans
+                    </li>
+                </ul>
             </section>
-            <pre><code class="language-html"><xmp></xmp></code></pre>
-            <h3 class="text-xl text-light mb-2 mt-5 font-medium">Stacked List</h3>
+            <pre><code class="language-html"><xmp><ul class="list-group">
+    <li class="list-item active">
+        Footwear
+    </li>
+    <li class="list-item">
+        Clothes
+    </li>
+    <li class="list-item">
+        T-Shirt
+    </li>
+    <li class="list-item">
+        Jeans
+    </li>
+</ul></xmp></code></pre>
+            <h3 class="text-xl text-light mb-2 mt-5 font-medium">Horizontal List</h3>
 
             <section class=" component-section row gap-1 mb-4">
-
+                <ul class="list-group horizontal-list">
+                    <li class="list-item active">
+                        Footwear
+                    </li>
+                    <li class="list-item">
+                        Clothes
+                    </li>
+                    <li class="list-item">
+                        T-Shirt
+                    </li>
+                    <li class="list-item">
+                        Jeans
+                    </li>
+                </ul>
             </section>
-            <pre><code class="language-html"><xmp></xmp></code></pre>
+            <pre><code class="language-html"><xmp><ul class="list-group horizontal-list">
+    <li class="list-item active">
+        Footwear
+    </li>
+    <li class="list-item">
+        Clothes
+    </li>
+    <li class="list-item">
+        T-Shirt
+    </li>
+    <li class="list-item">
+        Jeans
+    </li>
+</ul></xmp></code></pre>
+            <h3 class="text-xl text-light mb-2 mt-5 font-medium">Notification List</h3>
+
+            <section class=" component-section row gap-1 mb-4">
+                <ul class="list-group notification-list">
+                    <li class="list-item">
+                        <div class="list-item-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="list-item-body">
+                            <div class="list-item-header">
+                                <div class="list-item-title">Notification 1</div>
+                                <div class="list-item-trailing">20 Mins ago</div>
+                            </div>
+                            <div class="list-item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Doloribus, fuga.</div>
+
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-item-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="list-item-body">
+                            <div class="list-item-header">
+                                <div class="list-item-title">Notification 1</div>
+                                <div class="list-item-trailing">20 Mins ago</div>
+                            </div>
+                            <div class="list-item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Doloribus, fuga.</div>
+
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-item-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="list-item-body">
+                            <div class="list-item-header">
+                                <div class="list-item-title">Notification 1</div>
+                                <div class="list-item-trailing">20 Mins ago</div>
+                            </div>
+                            <div class="list-item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Doloribus, fuga.</div>
+
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <pre><code class="language-html"><xmp><ul class="list-group notification-list">
+    <li class="list-item">
+        <div class="list-item-icon">
+            <i class="fa fa-bell"></i>
+        </div>
+        <div class="list-item-body">
+            <div class="list-item-header">
+                <div class="list-item-title">Notification 1</div>
+                <div class="list-item-trailing">20 Mins ago</div>
+            </div>
+            <div class="list-item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloribus, fuga.</div>
+        </div>
+    </li>
+    <li class="list-item">
+        <div class="list-item-icon">
+            <i class="fa fa-bell"></i>
+        </div>
+        <div class="list-item-body">
+            <div class="list-item-header">
+                <div class="list-item-title">Notification 1</div>
+                <div class="list-item-trailing">20 Mins ago</div>
+            </div>
+            <div class="list-item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloribus, fuga.</div>
+
+        </div>
+    </li>
+    <li class="list-item">
+        <div class="list-item-icon">
+            <i class="fa fa-bell"></i>
+        </div>
+        <div class="list-item-body">
+            <div class="list-item-header">
+                <div class="list-item-title">Notification 1</div>
+                <div class="list-item-trailing">20 Mins ago</div>
+            </div>
+            <div class="list-item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloribus, fuga.</div>
+
+        </div>
+    </li>
+</ul></xmp></code></pre>
         </main>
     </main>
 </body>
