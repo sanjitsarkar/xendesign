@@ -12,9 +12,10 @@ li.list-item {
 .list-item:hover {
   background-color: var(--light-color-8);
 }
-.list-item .active {
+.active {
   background-color: var(--light-color-9);
 }
+
 .horizontal-list {
   flex-direction: row !important;
 }
