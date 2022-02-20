@@ -209,8 +209,6 @@ Check it out at: https://xendesign.netlify.app/components/modal.html
 
 ### Rating
 
-Rating provides insight regarding others' opinions and experiences, and can allow the user to submit a rating of their own.
-
 XenDesign provides the following types of Rating:
 
 - Dynamic Rating Bar
