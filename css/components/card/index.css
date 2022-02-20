@@ -45,12 +45,12 @@
   max-width: fit-content;
   flex: 1;
 }
-.card-horizontal img {
-  height: 100%;
-}
 .card-horizontal .card-header {
   max-width: max-content;
   flex: 1;
+}
+.card-horizontal img {
+  height: 100%;
 }
 .card-horizontal .card-bottom {
   padding: 0.4rem 0.3rem;
