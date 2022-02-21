@@ -13,6 +13,19 @@
   max-width: 20rem;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+.card-dismiss-btn {
+  position: absolute;
+  right: -5%;
+  top: -5%;
+  border: 2px solid var(--light-color);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  z-index: 5;
+  font-weight: bolder;
+  font-size: 1.75rem;
+}
 .card-md {
   max-width: 20rem;
 }
