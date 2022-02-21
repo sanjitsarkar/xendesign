@@ -16,8 +16,8 @@ li.list-item {
 .active {
   background-color: var(--light-color-9);
 }
-.horizontal-list {
-  flex-direction: row !important;
+ul.list-group.horizontal-list {
+  flex-direction: row;
 }
 
 .list-group.bordered-list {

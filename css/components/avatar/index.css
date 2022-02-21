@@ -14,7 +14,7 @@
   border-width: 3px;
 }
 .avatar-square {
-  border-radius: 8px !important;
+  border-radius: 8px;
 }
 .avatar > img {
   width: 100%;
