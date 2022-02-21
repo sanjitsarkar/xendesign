@@ -15,7 +15,7 @@ It's a component library for building UI with ease.
 
 ---
 
-## Live Website: [XenDesign](https://xendesign.netlify.app)
+## Live Preview: [XenDesign](https://xendesign.netlify.app)
 
 ---
 
