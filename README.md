@@ -1,12 +1,10 @@
 <div align="center">
-<h1>XenDesign - Component Library</h1>
-<br/>
+
 <br/>
  <img alt="XendDesign" src="./components/img/logo.png" width="150" />
 <br/>
 <br/>
-<br/>
-
+<h1>XenDesign - Component Library</h1>
 It's a component library for building UI with ease.
 It comes with all the common required components for building a site.
 
@@ -23,6 +21,7 @@ It comes with all the common required components for building a site.
 
 ## Live Preview: [XenDesign](https://xendesign.netlify.app)
 
+<img alt="Library Overview" src="./components/img/animation.gif"  />
 <img alt="Home Screen" src="https://camo.githubusercontent.com/6d60501adc1d7cf79f96a0bff65244d9e2c9b66a94502dabae46b8b7c5e5c230/68747470733a2f2f7777772e617765736f6d6573637265656e73686f742e636f6d2f7765622f696d6167652f7468756d626e61696c2f32323634303135373f6b65793d30653762353137356138363830396133383438656437313235346234663639662673697a653d6f726967"  />
 <img alt="Component Screen" src="https://camo.githubusercontent.com/30344a97dd41a5d412d8204340e628649a90d4f5bdf41d290cb82e00af00d007/68747470733a2f2f7777772e617765736f6d6573637265656e73686f742e636f6d2f7765622f696d6167652f7468756d626e61696c2f32323633393739353f6b65793d64313736653964363966373535343336313564616235316433356536626163642673697a653d6f726967"  />
 
@@ -46,7 +45,6 @@ and
 
 ```html
 <script src="https://xendesign.netlify.app/js/index.js" defer></script>
-;
 ```
 
 ---
