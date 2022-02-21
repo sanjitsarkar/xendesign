@@ -1,6 +1,11 @@
 <div align="center">
 <h1>XenDesign - Component Library</h1>
+<br/>
+<br/>
  <img alt="XendDesign" src="./components/img/logo.png" width="150" />
+<br/>
+<br/>
+<br/>
 
 It's a component library for building UI with ease.
 It comes with all the common required components for building a site.
