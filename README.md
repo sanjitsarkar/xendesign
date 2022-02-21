@@ -1,8 +1,9 @@
-## XenDesign - Component Library <img alt="XendDesign" src="./components/img/logo.svg"  />
-
 <div align="center">
+<h1>XenDesign - Component Library</h1>
+ <img alt="XendDesign" src="./components/img/logo.png" width="150" />
 
 It's a component library for building UI with ease.
+It comes with all the common required components for building a site.
 
 ![GitHub followers](https://img.shields.io/github/followers/sanjitsarkar?style=social)
 &emsp;
