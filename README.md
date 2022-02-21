@@ -44,7 +44,6 @@ and
 
 - [Colors](#colors)
 - [Typography](#typography)
-- 
 ---
 ### Components
 
