@@ -95,6 +95,7 @@ XenDesign provides the following types of Alert:
   - Error Alert
 
 Check it out at: https://xendesign.netlify.app/components/typography.html
+
 ---
 ### Avatar
 
