@@ -38,12 +38,13 @@ and
 ```html
 <script src="https://xendesign.netlify.app/js/index.js" defer></script>;
 ```
+---
 
 ### Text Utilities
 
 - [Colors](#colors)
 - [Typography](#typography)
-
+---
 ### Components
 
 - [Alert](#alert)
