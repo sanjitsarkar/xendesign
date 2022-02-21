@@ -15,7 +15,7 @@ It's a component library for building UI with ease.
 
 ---
 
-## Live Website: [XenDesign](https://xendesign.netlify.app)
+## Live Preview: [XenDesign](https://xendesign.netlify.app)
 
 ---
 
@@ -36,15 +36,15 @@ or
 and
 
 ```html
-<script src="https://xendesign.netlify.app/js/index.js" defer></script>
-;
+<script src="https://xendesign.netlify.app/js/index.js" defer></script>;
 ```
+---
 
 ### Text Utilities
 
 - [Colors](#colors)
 - [Typography](#typography)
-
+---
 ### Components
 
 - [Alert](#alert)
@@ -60,6 +60,7 @@ and
 - [Rating](#rating)
 - [Toast](#toast)
 - [Grid](#grid)
+- [Slider](#slider)
 
 ---
 
@@ -94,8 +95,9 @@ XenDesign provides the following types of Alert:
   - Warning Alert
   - Error Alert
 
-Check it out at: https://xendesign.netlify.app/components/typography.html
+Check it out at: https://xendesign.netlify.app/components/alert.html
 
+---
 ### Avatar
 
 XenDesign provides the following types of Avatar with different sizes:
@@ -247,4 +249,4 @@ XenDesign provides the following types of Slider:
 
 - Custom Standard Slider
 
-Check it out at: https://xendesign.netlify.app/components/grid.html
+Check it out at: https://xendesign.netlify.app/components/slider.html
