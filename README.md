@@ -60,6 +60,7 @@ and
 - [Rating](#rating)
 - [Toast](#toast)
 - [Grid](#grid)
+- [Slider](#slider)
 
 ---
 
