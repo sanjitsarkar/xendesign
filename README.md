@@ -249,4 +249,4 @@ XenDesign provides the following types of Slider:
 
 - Custom Standard Slider
 
-Check it out at: https://xendesign.netlify.app/components/grid.html
+Check it out at: https://xendesign.netlify.app/components/slider.html
