@@ -153,6 +153,7 @@ Check it out at: https://xendesign.netlify.app/components/badge.html
 XenDesign provides the following types of Card:
 
 - Standard Card (Vertical)
+- Simple Dismissable Card
 - Responsive Horizontal Card
 - Card with Badge
 - Text Overlay Card
