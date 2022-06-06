@@ -76,12 +76,3 @@ rating[4].addEventListener("click", () => {
     addRating(4);
 })
 }
-
-const arr = ["Hello","How"];
-let obj = {}
-
-arr.forEach((val,i)=>{
-    i = String(i);
-    obj = {...obj,[i]:val}
-})
-console.log(obj)
